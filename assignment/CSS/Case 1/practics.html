@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <style>
+        body>section{
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+        body>section:nth-child(1){
+            background-color: red;
+            left: 0;
+            top: 0;
+        }
+        body>section:nth-child(2){
+            background-color: orange;
+            bottom: 0;
+            left: 0;
+        }
+        body>section:nth-child(3){
+            background-color: green;
+            top: 0;
+            right: 0;
+        }
+        body>section:nth-child(4){
+            background-color: deeppink;
+            bottom: 0;
+            right: 0;
+        }
+        body>section>section{
+            width: 200px ;
+            height: 200px;
+            border-radius: 200px;
+            background: white;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+        body>section>section>div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+        .circle1{
+            position: absolute;
+            background-color: aliceblue;
+            width: 20%;
+            height:29% ;
+            border-bottom-right-radius: 100%;
+        }
+        .circle3{
+            position: absolute;
+            background-color: aliceblue;
+            width: 20%;
+            height:29% ;
+            left: 83%;
+            border-bottom-left-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div class="circle1"></div>
+    <section>
+
+        <div></div>
+    </section>
+    <div class="circle3"></div>
+</section>
+
+<section>
+    <section>
+        <div></div>
+    </section>
+</section>
+
+<section>
+    <div class="circle1"></div>
+    <section>
+        <div></div>
+    </section>
+    <div class="circle3"></div>
+</section>
+
+<section>
+    <section>
+        <div></div>
+    </section>
+</section>
+
+</body>
+</html>
