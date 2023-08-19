@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="fonts/css/all.min.css">
+
+
+
+    <style>
+        header{
+            background: white;
+            box-shadow: 3px 1px 1px 3px black ;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            height: 73px;
+            z-index: 2;
+        }
+        header>img{
+            width: 150px;
+            position: relative;
+            top: 20px;
+            left: 10px;
+        }
+        header>nav{
+            position: absolute;
+            right: 40px;
+            top: 5px;
+        }
+        header>nav>ul>li{
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px;
+            color: black;
+            font-size: 19px;
+            border-right: 2px solid rgba(46, 41, 41 ,0.58);
+        }
+        header>nav>ul>li:first-child{
+            border-left: 2px solid rgba(46, 41, 41 ,0.58);
+        }
+        ul>li:hover a{
+            color: red;
+        }
+        ul>li:hover i{
+            color: red;
+        }
+        main{
+            position: relative;
+            margin-top: 73px;
+        }
+        main>nav{
+            position: absolute;
+            background: #143170;
+            top: 0;
+            bottom: 0;
+            width: 270px;
+        }
+        main>nav>ul>li{
+            color: white;
+            list-style: none;
+            padding-top: 40px;
+            font-size: 19px;
+        }
+        header ul>li>i{
+            padding-right: 1px;
+        }
+        main ul>li>i{
+            padding-right: 10px;
+        }
+        header ul>li>a{
+            color: black;
+            text-decoration: none;
+        }
+        main ul>li>a{
+            color: white;
+            text-decoration: none;
+        }
+        main>section{
+            margin-left: 270px;
+            padding: 10px;
+        }
+        main>section p{
+            color: #433636f5;
+        }
+        main>section>section:first-child{
+            height: 200px;
+            position: relative;
+        }
+        main>section>section:first-child>div{
+            height: 100%;
+            width: calc(100%/3);
+            position: absolute;
+            border: 1px solid black;
+        }
+        main>section>section:first-child>div:nth-child(1){
+            background: url("image/monkey.gif");
+            position: center;
+            left: 0;
+        }
+        main>section>section:first-child>div:nth-child(2){
+            background: url("image/monkey.gif");
+            left: calc(100%/3);
+        }
+        main>section>section:first-child>div:nth-child(3){
+            background: url("image/monkey.gif");
+            right: 0;
+        }
+        footer{
+            height: 60px;
+            background: #363030;
+            color: white;
+        }
+        footer>h4{
+            text-align: center;
+            margin-top: 0;
+            padding-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <img src="image/ijse.jpg" alt="img">
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i><a href="https://ijse.lk" target="_blank">Home</a></li>
+            <li><i class="fa-solid fa-earth-americas"></i><a href="#">Service</a></li>
+            <li><i class="fa-solid fa-headphones-simple"></i><a href="">Contact</a></li>
+            <li><i class="fa-solid fa-address-card"></i><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i><a href="https://ijse.lk" target="_blank">Home</a></li>
+            <li><i class="fa-solid fa-earth-americas"></i><a href="#">Services</a></li>
+            <li><i class="fa-solid fa-headphones-simple"></i><a href="#">Contacts</a></li>
+            <li><i class="fa-solid fa-address-card"></i><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur autem blanditiis consequatur
+                corporis debitis doloremque eos hic iusto labore laborum nisi nobis, odio optio perspiciatis placeat sit soluta
+                suscipit!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur autem blanditiis consequatur
+                corporis debitis doloremque eos hic iusto labore laborum nisi nobis, odio optio perspiciatis placeat sit soluta
+                suscipit!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur autem blanditiis consequatur
+                corporis debitis doloremque eos hic iusto labore laborum nisi nobis, odio optio perspiciatis placeat sit soluta
+                suscipit!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur autem blanditiis consequatur
+                corporis debitis doloremque eos hic iusto labore laborum nisi nobis, odio optio perspiciatis placeat sit soluta
+                suscipit!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur autem blanditiis consequatur
+                corporis debitis doloremque eos hic iusto labore laborum nisi nobis, odio optio perspiciatis placeat sit soluta
+                suscipit!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur autem blanditiis consequatur
+                corporis debitis doloremque eos hic iusto labore laborum nisi nobis, odio optio perspiciatis placeat sit soluta
+                suscipit!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur autem blanditiis consequatur
+                corporis debitis doloremque eos hic iusto labore laborum nisi nobis, odio optio perspiciatis placeat sit soluta
+                suscipit!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur autem blanditiis consequatur
+                !</p>
+
+        </section>
+    </section>
+</main>
+
+<footer>
+    <h4>Developed By IJSE @ 2023</h4>
+</footer>
+</body>
+</html>
