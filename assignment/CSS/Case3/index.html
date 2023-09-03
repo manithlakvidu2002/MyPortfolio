@@ -2,9 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Case Three</title>
+    <link rel="stylesheet" href="normalize.css">
+
+    <style>
+
+        #fixed>div{
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100%;
+
+            z-index: 1;
+        }
+        #fixed>div:nth-child(1){
+            border: grey solid 20px;
+            width: 300px;
+            height: 300px;
+        }
+
+        #fixed>div:nth-child(2){
+            border: red solid 20px;
+            width: 260px;
+            height: 260px;
+        }
+
+        div{
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100%;
+        }
+
+        .notFixed{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .notFixed>div{
+            position: absolute;
+            top : 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 260px;
+            height: 260px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section:nth-child(2)>div{
+            background: purple;
+        }
+
+        section:nth-child(3)>div{
+            background: lightskyblue;
+        }
+
+        section:nth-child(4)>div{
+            background: orangered;
+        }
+
+        .notFixed>div>p{
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+
+    </style>
+
 </head>
 <body>
+<section id="fixed">
+    <div>
+    </div>
+    <div>
+    </div>
+</section>
 
+<section class="notFixed">
+    <div>
+        <p>Hello</p>
+    </div>
+</section>
+
+<section class="notFixed" >
+    <div>
+        <p>Welcome to</p>
+    </div>
+</section>
+
+<section class="notFixed">
+    <div>
+        <p>Institute Of Software Engineering</p>
+    </div>
+</section>
 </body>
 </html>
