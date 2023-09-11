@@ -53,7 +53,7 @@ main>section:first-child>aside{
     background-color: #191526;
     margin-top: 50px;
     padding-left: 40px;
-    height: 90vh;
+    height: 100vh;
 }
 #welcome{
     color: white;
@@ -84,6 +84,7 @@ main>section:first-child>aside{
 #Proficiency{
     background-color: #143170;
     height: 90vh;
+
 }
 
 
