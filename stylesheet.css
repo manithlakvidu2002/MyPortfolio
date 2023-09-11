@@ -6,17 +6,23 @@ body {
 }
 
 header {
-    background-color: #f0f0f0;
-    padding: 10px;
+    background-color: #B1B2B1 ;
+    padding: 5px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 nav ul {
+    padding-left: 0;
     list-style: none;
     display: flex;
 }
@@ -26,42 +32,64 @@ nav ul a {
     text-decoration: none;
     color: #333;
 }
+#about{
+    margin-left: 0px;
+}
 
 main {
-    padding: 20px;
+    padding-top: 28px;
 }
 
-section {
+/*section {
     margin: 40px 0;
+}*/
+main>section:first-child>aside{
+    position: absolute;
+    right: 70px;
+    top: 0px;
+    padding-top: 50px;
 }
+#home{
+    background-color: #191526;
+    margin-top: 50px;
+    padding-left: 40px;
+    height: 90vh;
+}
+#welcome{
+    color: white;
+    padding-top: 120px;
+    margin-top: 0px;
+    font-size: xx-large;
+}
+#hello{
+    color: white;
+    padding-top: 7px;
+    font-size: x-large;
+}
+
+#article{
+    color: white;
+    font-size: 20px;
+}
+#descrption{
+    padding-top: 10px;
+    color: white;
+    font-size: 15px;
+}
+#homenav{
+    padding-top: 100px;
+
+}
+
+#Proficiency{
+    background-color: #143170;
+    height: 90vh;
+}
+
+
 
 /* Additional CSS for merging the profile photos */
-#profile_photo {
-    position: relative;
-  }
-  
-  .photo-container {
-    position: relative;
-    width: 35%;
-    height: 35%;
-    margin: 0 auto;
-  }
-  
-  .photo-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    animation: fadeIn 1.5s ease-in-out forwards;
-  }
-  
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
+
 
 /* Footer styling */
 footer {
