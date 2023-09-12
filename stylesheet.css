@@ -1,136 +1,3 @@
-/*
-!* General styling *!
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #B1B2B1 ;
-    padding: 5px;
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 3;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-nav ul {
-    padding-left: 0;
-    list-style: none;
-    display: flex;
-}
-
-nav ul a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-}
-#about{
-    margin-left: 0px;
-}
-
-main {
-    padding-top: 28px;
-}
-
-!*section {
-    margin: 40px 0;
-}*!
-main>section:first-child>aside{
-    position: absolute;
-    right: 70px;
-    top: 50px;
-
-}
-#home{
-    background-color: #191526;
-    margin-top: 50px;
-    padding-left: 40px;
-    height: 95vh;
-
-
-
-}
-#welcome{
-    color: white;
-    padding-top: 120px;
-    margin-top: 0px;
-    font-size: xx-large;
-}
-#hello{
-    color: white;
-    padding-top: 7px;
-    font-size: x-large;
-}
-
-#article{
-    color: white;
-    font-size: 20px;
-}
-#descrption{
-    padding-top: 10px;
-    color: white;
-    font-size: 15px;
-}
-#homenav{
-    padding-top: 100px;
-
-
-}
-
-#Proficiency{
-    background-color: #143170;
-    height: 90vh;
-
-}
-
-
-
-!* Additional CSS for merging the profile photos *!
-
-
-!* Footer styling *!
-footer {
-    background-color: #333;
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-}
-
-footer h2 {
-    margin: 0;
-    font-size: 24px;
-}
-
-footer nav ul {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-footer nav ul a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer small {
-    display: block;
-    margin-top: 20px;
-}
-
-!* Add more styles as needed *!
-
-!* Your other styles... *!
-*/
 /* Reset some default styles */
 body, h1, h2, h3, h4, p, ul, li {
     margin: 0;
@@ -145,48 +12,109 @@ body {
 
 /* Style the header */
 header {
-    background-color: #B1B2B1;
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    z-index: 1;
 }
 
-header .logo {
+header.logo {
     font-size: 24px;
     font-weight: bold;
 }
 
-/* Style the navigation menu */
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
+nav>ul>a {
+    text-decoration: none;
+    color: white;
     margin-right: 20px;
 }
 
-nav ul li a {
-    text-decoration: none;
+/* Style sections */
+.pages{
+    background-color: white;
+    position: relative;
+    height: 95vh;
+}
+
+#home{
+    padding-top: 70px;
+    background-color: #191526;
     color: white;
 }
 
-/* Style the main content */
-main {
-    padding: 0px;
+h4{
+    font-size: 30px;
+    font-family: "Arial Black";
 }
 
-/* Style sections */
-section {
-    margin-bottom: 30px;
-    background-color: seashell;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+h3{
+    font-size: 30px;
+    font-family: Calibri;
 }
 
-section h2 {
+h2 {
+    font-family: Arial;
+    font-size: 50px;
+}
+
+#welcome{
+    padding-bottom: 20px;
+}
+
+#hello{
+    padding-bottom: 20px;
+}
+
+#article>p:nth-child(1){
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#homenav{
+    padding-top: 20px;
+}
+
+#home>div{
+    margin-left: 50px;
+    margin-top: 200px;
+}
+
+#home>aside{
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    right: 10px;
+    /* top: 58px; */
+    height: 56%;
+    width: 26%;
+    padding-bottom: 170px;
+}
+
+#home>aside>img{
+    width: 600px;
+}
+
+p{
+    font-size: 20px;
+    color: white;
+}
+#article>p:nth-child(2){
+    font-size: 18px;
+}
+
+section>h2{
     font-size: 24px;
     margin-bottom: 10px;
+}
+
+#Proficiency{
+    background-color:#B1B2B1 ;
 }
 
 /* Style images */
@@ -196,11 +124,13 @@ img {
 }
 
 /* Style the footer */
-footer {
+body>footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
+    left: 0;
+    right: 0;
 }
 
 footer a {
