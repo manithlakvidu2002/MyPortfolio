@@ -1,4 +1,5 @@
-/* General styling */
+/*
+!* General styling *!
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,7 +12,7 @@ header {
     position: fixed;
     right: 0;
     left: 0;
-    z-index: 1;
+    z-index: 3;
 }
 
 nav {
@@ -40,20 +41,23 @@ main {
     padding-top: 28px;
 }
 
-/*section {
+!*section {
     margin: 40px 0;
-}*/
+}*!
 main>section:first-child>aside{
     position: absolute;
     right: 70px;
-    top: 0px;
-    padding-top: 50px;
+    top: 50px;
+
 }
 #home{
     background-color: #191526;
     margin-top: 50px;
     padding-left: 40px;
-    height: 100vh;
+    height: 95vh;
+
+
+
 }
 #welcome{
     color: white;
@@ -79,6 +83,7 @@ main>section:first-child>aside{
 #homenav{
     padding-top: 100px;
 
+
 }
 
 #Proficiency{
@@ -89,10 +94,10 @@ main>section:first-child>aside{
 
 
 
-/* Additional CSS for merging the profile photos */
+!* Additional CSS for merging the profile photos *!
 
 
-/* Footer styling */
+!* Footer styling *!
 footer {
     background-color: #333;
     padding: 20px;
@@ -122,6 +127,84 @@ footer small {
     margin-top: 20px;
 }
 
-/* Add more styles as needed */
+!* Add more styles as needed *!
 
-/* Your other styles... */
+!* Your other styles... *!
+*/
+/* Reset some default styles */
+body, h1, h2, h3, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font styles */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #B1B2B1;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style the main content */
+main {
+    padding: 0px;
+}
+
+/* Style sections */
+section {
+    margin-bottom: 30px;
+    background-color: seashell;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
