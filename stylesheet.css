@@ -178,15 +178,22 @@ section>h2{
     background-color: #191526;
     color: white;
 }
-#skills>dl{
+/*#skills>dl{
     display: inline-block;
-}
+}*/
 
 #skills>h1{
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+#skills>div{
     position: absolute;
-    top: 60px;
-    left: 0;
+    width: 60%;
+    top: 80px;
     right: 0;
+    left: 0;
+    bottom: 0;
     margin: auto;
 }
 
