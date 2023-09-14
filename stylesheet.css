@@ -6,16 +6,45 @@ body, h1, h2, h3, h4, p, ul, li {
 
 /* Set a background color and font styles */
 body {
-    background-color: #f2f2f2;
+    background-color: #B1B2B1;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
+
+.pages{
+    background-color: white;
+    position: relative;
+    height: 100vh;
+}
+
+h4{
+    font-size: 30px;
+    font-family: "Arial Black";
+}
+
+h3{
+    font-size: 30px;
+    font-family: Calibri;
+}
+
+h2 {
+    font-family: Arial;
+    font-size: 50px;
+}
+
+p{
+    font-size: 20px;
+    color: white;
+}
+
+/*-----------------------section 1----------------------------------------------------------------*/
 
 /* Style the header */
 header {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     position: fixed;
     top: 0;
     left:0;
@@ -34,40 +63,22 @@ nav>ul>a {
     margin-right: 20px;
 }
 
-/* Style sections */
-.pages{
-    background-color: white;
-    position: relative;
-    height: 95vh;
-}
-
 #home{
-    padding-top: 70px;
+    padding-top: 1px;
+    background-color: white;
     background-color: #191526;
-    color: white;
-}
-
-h4{
-    font-size: 30px;
-    font-family: "Arial Black";
-}
-
-h3{
-    font-size: 30px;
-    font-family: Calibri;
-}
-
-h2 {
-    font-family: Arial;
-    font-size: 50px;
+    border-bottom-left-radius: 450px;
+    border-bottom-right-radius: 450px;
 }
 
 #welcome{
     padding-bottom: 20px;
+    color: white;
 }
 
 #hello{
     padding-bottom: 20px;
+    color: white;
 }
 
 #article>p:nth-child(1){
@@ -79,31 +90,26 @@ h2 {
     padding-top: 20px;
 }
 
-#home>div{
-    margin-left: 50px;
-    margin-top: 200px;
+#home>div:nth-child(1){
+    margin-left: 125px;
+    margin-top: 140px;
 }
 
-#home>aside{
+#home>div:nth-child(2){
+    width: 35%;
     margin: auto;
     top: 0;
     bottom: 0;
     position: absolute;
     right: 10px;
-    /* top: 58px; */
-    height: 56%;
-    width: 26%;
-    padding-bottom: 170px;
 }
 
-#home>aside>img{
-    width: 600px;
+#home>div:nth-child(2)>img{
+    background-position: center;
+    background-size: cover;
+    height: 100%;
 }
 
-p{
-    font-size: 20px;
-    color: white;
-}
 #article>p:nth-child(2){
     font-size: 18px;
 }
@@ -113,15 +119,180 @@ section>h2{
     margin-bottom: 10px;
 }
 
+
+/*-----------------------section 2----------------------------------------------------------------*/
 #Proficiency{
     background-color:#B1B2B1 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Style images */
-img {
-    max-width: 100%;
-    height: auto;
+#proBox{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
 }
+
+#Proficiency>hgroup {
+    align-self: flex-start;
+    align-self: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+#Proficiency>hgroup>h2{
+    margin-top: 30px;
+}
+
+#proBox>div{
+    width: calc(100%/3.5);
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #191526, #B1B2B1);
+    padding: 15px;
+    box-shadow: 10px 10px 20px black;
+}
+
+#proBox>div>div{
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+#proBox>div>h3{
+    align-self: center;
+    margin-bottom: 20px;
+    color: #0075FF;
+}
+
+#proBox>div>p{
+    color: #F7F7F7;
+}
+
+/*-----------------------section 3----------------------------------------------------------------*/
+
+#skills{
+    background-color: #191526;
+    color: white;
+}
+#skills>dl{
+    display: inline-block;
+}
+
+#skills>h1{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+/*-----------------------section 4----------------------------------------------------------------*/
+
+#aboutme{
+    background: linear-gradient(to bottom, #191526 30%, #B1B2B1 );
+}
+
+#aboutImg>div:nth-child(1){
+    padding-top: 60px;
+
+}
+
+#aboutImg>div:nth-child(2){
+    display: inline-block;
+    position: absolute;
+    top: 305px;
+    left: 154px;
+    display: inline-block;
+}
+
+#aboutP{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    height: auto;
+    width: 60%;
+    margin: auto;
+    bottom: 0;
+}
+
+/*-----------------------section 5----------------------------------------------------------------*/
+
+#myProjects{
+    background-color: #B1B2B1;
+    display: flex;
+    flex-direction: column;
+}
+
+#myProjects>h1{
+    align-self: flex-start;
+    align-self: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+#myProjects>nav{
+    align-self: center;
+    height: 50%;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#myProjects>nav>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#myProjects>nav>div>img{
+    width: calc(100%/4.5);
+    height: 100%;
+    box-shadow: 10px 10px 20px black;
+}
+
+/*-----------------------section 6----------------------------------------------------------------*/
+
+#languages{
+    background-color: #191526;
+    display: flex;
+    flex-direction: column;
+}
+
+#languages>h1{
+    align-self: center;
+    margin-top: 60px;
+    color: white;
+}
+
+#languages>section{
+    display: flex;
+    justify-content: space-between;
+}
+
+#languagesGrid>div>img{
+    box-shadow: 10px 10px 20px black;
+}
+
+#languagesGrid{
+    display: grid;
+    width: 85%;
+    height: 50%;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 70px;
+    grid-row-gap: 70px;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
 
 /* Style the footer */
 body>footer {
