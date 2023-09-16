@@ -37,6 +37,7 @@ p{
     color: white;
 }
 
+
 /*-----------------------section 1----------------------------------------------------------------*/
 
 /* Style the header */
@@ -62,6 +63,11 @@ header>nav {
     right: 10px;
     top: 19px;
 }
+#contact:hover{
+    background-color: #B1B2B1;
+    color: #0075FF;
+    transition:  all;
+}
 
 nav>ul>a {
     text-decoration: none;
@@ -79,12 +85,13 @@ header>nav>ul>a:last-child{
     /*margin: 0;*/
     background: #0075FF;
     color: rgb(241, 235, 235);
-    width: 12%;
+    /*width: 12%;*/
     border-radius: 10px;
     justify-content: center;
     text-align: center;
     border: 1px solid #333333;
 }
+
 #home{
     padding-top: 1px;
     background-color: white;
@@ -111,17 +118,26 @@ header>nav>ul>a:last-child{
 #homenav{
     padding-top: 20px;
 }
+#homenav>ul>a:hover{
+    box-shadow: 0px 5px 5px black;
+    transition: all;
+}
 #about{
-    align-items: center;
+    padding-bottom: 0px;
     padding: 0.3rem;
     /*margin: 0;*/
     background: #0075FF;
     color: rgb(241, 235, 235);
-    width: 12%;
+    width: 10%;
     border-radius: 10px;
     justify-content: center;
     text-align: center;
     border: 1px solid #333333;
+}
+#about:hover{
+    background-color: #B1B2B1;
+    color: #0075FF;
+    transition:  all;
 }
 
 #home>div:nth-child(1){
@@ -182,6 +198,7 @@ section>h2{
 }
 
 #proBox>div{
+    border-radius: 30px;
     width: calc(100%/3.5);
     display: flex;
     align-content: center;
@@ -190,6 +207,16 @@ section>h2{
     padding: 15px;
     box-shadow: 10px 10px 20px black;
 }
+#proBox>div:hover{
+    background: linear-gradient(to bottom, #0075FF, #B1B2B1);
+    color: #B1B2B1;
+    transition: 2s all;
+}
+#proBox>div:hover h3{
+    color: #191526;
+    transition: 2s all;
+}
+
 
 #proBox>div>div{
     align-self: center;
@@ -320,6 +347,33 @@ section>h2{
     height: 100%;
     border-radius: 5%;
     box-shadow: 10px 10px 20px black;
+    transition: 1s all;
+}
+#myProjects>nav>div>img:hover{
+    width: 200px;
+    height: 150px;
+    transition: 1s all;
+}
+
+#click {
+    position: absolute;
+    align-items: center;
+    padding: 0.3rem;
+    margin: 0;
+    background: #0075FF;
+    color: rgb(241, 235, 235);
+    width: 12%;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    bottom: 20vh;
+    right: 44vw;
+    text-decoration: none;
+}
+#click:hover{
+    background-color: #B1B2B1;
+    color: #0075FF;
+    transition:  all;
 }
 
 /*-----------------------section 6----------------------------------------------------------------*/
@@ -342,7 +396,8 @@ section>h2{
 }
 
 #languagesGrid>div>img{
-    box-shadow: 10px 10px 20px black;
+    /*box-shadow: 10px 10px 20px black;*/
+    transition: 1s all;
 }
 
 #languagesGrid{
@@ -358,6 +413,11 @@ section>h2{
     left: 0;
     right: 0;
     margin: auto;
+}
+#languagesGrid>div>img:hover{
+    width: 90px;
+    height: 90px;
+    transition: 1s all;
 }
 
 /*-----------------------section 7----------------------------------------------------------------*/
@@ -527,6 +587,11 @@ section>h2{
     border: 1px solid #333333;
     position: absolute;
     right: 25px;
+}
+#send:hover{
+    background-color: #B1B2B1;
+    color: #0075FF;
+    transition:  all;
 }
 
 /*-----------------------section footer----------------------------------------------------------------*/
