@@ -1,10 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <title>Case 4</title>
+    <title>Document Meta Data</title>
+    <meta name="keyword" content="IJSE, GDSE, HTML">
+    <meta name="Descrption" content="FullStack Developer">
+    <meta name="Onwer" content="Manith Lakvidu">
+    <meta name="Author" content="Manith Lakvidu">
+    <meta name="theme-color" content="#191526">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="324421401_474655004846832_9157756639677651075_n.jpg">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="http://manithlakvidu.42web.io/">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-</body>
+    <style>
+        section {
+            position: relative;
+            width: 98vw;
+            height: 99vh;
+        }
+        section>div {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: transparent;
+            border: 5px solid grey;
+            border-top-color: red;
+            border-radius: 50%;
+
+        }
+        .div::before {
+            position: absolute;
+            content: "";
+            width: 8px;
+            height: 113px;
+            top: 7px;
+            left: 130px;
+            background-color: red;
+            transform: rotate(45deg);
+        }
+        .div::after {
+            position: absolute;
+            content: "";
+            width: 18px;
+            height: 18px;
+            top: 16px;
+            left: 172px;
+            background-color: red;
+            border-radius: 50%;
+            transform: translateX(-50%);
+        }
+        section>div:hover{
+            transform: rotate(360deg);
+            transition-duration: 2s;
+        }
+    </style>
+</head>
+
+    <body>
+        <section>
+                <div><div class="div"></div></div>
+        </section>
+    </body>
+
 </html>
