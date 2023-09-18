@@ -77,7 +77,7 @@ nav>ul>a {
 
 nav>ul>a:hover{
     transition: all;
-    color: blue ;;
+    color: blue ;
 }
 header>nav>ul>a:last-child{
     align-items: center;
@@ -613,4 +613,135 @@ footer a {
 footer>h2{
     font-size: 18px;
     padding-bottom: 5px;
+}
+@media all and (max-width: 320px){
+    h4 {
+        font-size: 13px;
+        font-family: "Arial Black";
+    }
+    h3 {
+        font-size: 17px;
+        font-family: Calibri;
+    }
+    h2 {
+        font-family: Arial;
+        font-size: 15px;
+    }
+    p {
+        font-size: 13px;
+        color: white;
+    }
+    header>h1{
+        font-size: 13px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        padding-top: 5px;
+        border-left-width: 0px;
+        padding-left: 105px;
+    }
+    #welcome {
+        padding-bottom: 8px;
+        color: white;
+    }
+    #hello {
+        padding-bottom: 9px;
+        color: white;
+    }
+    header>nav {
+        position: absolute;
+        display: inline-block;
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 19px;
+    }
+
+    header>nav>ul>a {
+        padding-left: 3px;
+        text-decoration: none;
+        color: white;
+        font-size: 8px;
+        text-decoration: none;
+        color: white;
+        margin-right: 0px;
+    }
+    header>nav>ul>a:hover{
+        transition: all;
+        color: blue;
+    }
+    #home>div:nth-child(2){
+        display: none;
+    }
+    #home>div:nth-child(1) {
+        margin-left: 20px;
+        margin-top: 110px;
+    }
+    #article>p:nth-child(1) {
+        padding-top: 10px;
+        padding-bottom: 12px;
+    }
+    #article>p:nth-child(2) {
+        font-size: 10px;
+    }
+    #homenav>ul{
+        display: flex;
+    }
+    #homenav>ul>a {
+        margin-right: 6px;
+    }
+    #about {
+        padding-bottom: 0px;
+        padding: 0.3rem;
+        /* margin: 0; */
+        background: #0075FF;
+        color: rgb(241, 235, 235);
+        width: 25%;
+        border-radius: 10px;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid #333333;
+        font-size: 10px;
+    }
+    #proBox {
+        /* display: block; */
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        flex-direction: column;
+        position: absolute;
+        top: 150px;
+        left: 80px;
+        /* bottom: 0; */
+        right: 0;
+        /* margin: auto; */
+    }
+    #proBox>div {
+        width: 40vw;
+        /* display: block; */
+        border-radius: 30px;
+        /* width: calc(100%/3.5); */
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        background: linear-gradient(to bottom, #191526, #B1B2B1);
+        padding: 15px;
+        box-shadow: 10px 10px 20px black;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+    #Proficiency>hgroup>h2 {
+        margin-left: 19px;
+        margin-top: 10px;
+    }
+    #Proficiency>hgroup {
+        align-self: flex-start;
+        align-self: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
 }
