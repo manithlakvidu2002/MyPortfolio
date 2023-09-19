@@ -1100,9 +1100,9 @@ footer>h2{
     }
 }
 
-/*@media all and (min-width: 320px) and (max-width: 375px) {
+@media all and (min-width: 321px) and (max-width: 375px) {
 
-    !*-----------------------@Media 375px public----------------------------------------------------------------*!
+    /*-----------------------@Media 375px public----------------------------------------------------------------*/
     h4 {
         font-size: 13px;
         font-family: "Arial Black";
@@ -1119,7 +1119,7 @@ footer>h2{
         font-size: 13px;
         color: white;
     }
-    !*-----------------------@Media 375px Header----------------------------------------------------------------*!
+    /*-----------------------@Media 375px Header----------------------------------------------------------------*/
     header {
         background-color: #333;
         color: white;
@@ -1156,9 +1156,8 @@ footer>h2{
         margin: auto;
         top: 19px;
     }
-
     header>nav>ul>a {
-        padding-left: 2vw;
+        padding-left: 3vw;
         text-decoration: none;
         color: white;
         font-size: 2.1vw;
@@ -1170,7 +1169,7 @@ footer>h2{
         transition: all;
         color: blue;
     }
-    !*-----------------------@Media 375px Home Section----------------------------------------------------------------*!
+    /*-----------------------@Media 375px Home Section----------------------------------------------------------------*/
     #home>div:nth-child(2){
         display: none;
     }
@@ -1203,17 +1202,16 @@ footer>h2{
         border: 1px solid #333333;
         font-size: 10px;
     }
-    !*-----------------------@Media 375px Proficiency Section-----------------------------------------------------*!
+    /*-----------------------@Media 375px Proficiency Section-----------------------------------------------------*/
     #Proficiency {
         background-color: #B1B2B1;
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 200vh;
+        height: 180vh;
     }
     #proBox {
-        width: 100%;
-        height: 20%;
+
         display: flex;
         justify-content: center;
         justify-content: space-between;
@@ -1225,9 +1223,9 @@ footer>h2{
     }
     #proBox>div {
         width: 40vw;
-        !* display: block; *!
+        /* display: block; */
         border-radius: 30px;
-        !* width: calc(100%/3.5); *!
+        /* width: calc(100%/3.5); */
         display: flex;
         align-content: center;
         flex-direction: column;
@@ -1249,7 +1247,7 @@ footer>h2{
         margin-top: 60px;
         margin-bottom: 30px;
     }
-    !*-----------------------@Media 375px Skills Section-----------------------------------------------------*!
+    /*-----------------------@Media 375px Skills Section-----------------------------------------------------*/
 
     #skills>h1 {
         text-align: center;
@@ -1267,7 +1265,7 @@ footer>h2{
         margin: auto;
     }
 
-    !*-----------------------@Media 375px About Me Section-----------------------------------------------------*!
+    /*-----------------------@Media 375px About Me Section-----------------------------------------------------*/
     #aboutImg>div:nth-child(1) {
         padding-top: 65px;
         padding-left: 7px;
@@ -1315,12 +1313,12 @@ footer>h2{
     #aboutP>article>menu>li {
         padding-bottom: 9px;
     }
-    !*-----------------------@Media 375px My Projects Section-----------------------------------------------------*!
+    /*-----------------------@Media 375px My Projects Section-----------------------------------------------------*/
     #myProjects {
         background: linear-gradient(to bottom, #191526 30%, #B1B2B1 );
         display: flex;
         flex-direction: column;
-        height: 180vh;
+        height: 170vh;
     }
     #myProjects>h1 {
         font-size: 15px;
@@ -1364,7 +1362,7 @@ footer>h2{
         text-decoration: none;
     }
 
-    !*-----------------------@Media 375px My Projects Section-----------------------------------------------------*!
+    /*-----------------------@Media 375px My Projects Section-----------------------------------------------------*/
     #languages {
         height: 150vh;
         background-color: #191526;
@@ -1385,7 +1383,7 @@ footer>h2{
     #languagesGrid {
         display: grid;
         width: 60%;
-        !* height: 10%; *!
+        /* height: 10%; */
         grid-template-rows: repeat(6,1fr);
         grid-template-columns: repeat(2,1fr);
         grid-column-gap: 70px;
@@ -1409,7 +1407,7 @@ footer>h2{
         height: 40px;
     }
 
-    !*-----------------------@Media 375px My Blog Section-----------------------------------------------------*!
+    /*-----------------------@Media 375px My Blog Section-----------------------------------------------------*/
     #glife>hgroup>h1 {
         font-size: 15px;
         text-align: center;
@@ -1417,7 +1415,7 @@ footer>h2{
     }
     #glife>hgroup>h3 {
         font-size: 15px;
-        !* padding-bottom: 20px; *!
+        /* padding-bottom: 20px; */
         text-align: center;
         color: white;
     }
@@ -1467,7 +1465,7 @@ footer>h2{
 
 
 
-    !*-----------------------@Media 375px Contact Me Section-----------------------------------------------------*!
+    /*-----------------------@Media 375px Contact Me Section-----------------------------------------------------*/
     #contactMe>hgroup>h3 {
         font-size: 15px;
         text-align: center;
@@ -1524,12 +1522,12 @@ footer>h2{
         padding-top: 0;
     }
     .fealdset {
-        padding-left: 10px;
         width: 100%;
         height: 100%;
         outline: none;
         text-decoration: none;
         border: none;
+        padding-right: 0;
     }
     .fealdset>label {
         font-size: 10px;
@@ -1540,7 +1538,7 @@ footer>h2{
         padding: 0.2rem;
         margin: 0;
         background: #B1B2B1;
-        !* color: rgb(241, 235, 235); *!
+        /* color: rgb(241, 235, 235); */
         text-transform: none;
         font-size: 1rem;
         width: 90%;
@@ -1566,7 +1564,7 @@ footer>h2{
         padding-top: 2px;
         font-size: 10px;
     }
-    !*-----------------------@Media 375px Footer Section-----------------------------------------------------*!
+    /*-----------------------@Media 375px Footer Section-----------------------------------------------------*/
 
     footer>h2 {
         font-size: 15px;
@@ -1583,7 +1581,7 @@ footer>h2{
         left: 0;
         right: 0;
     }
-}*/
+}
 
 
 /*
