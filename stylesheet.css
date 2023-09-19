@@ -674,9 +674,8 @@ footer>h2{
         margin: auto;
         top: 19px;
     }
-
     header>nav>ul>a {
-        padding-left: 2vw;
+        padding-left: 3vw;
         text-decoration: none;
         color: white;
         font-size: 2vw;
@@ -727,7 +726,7 @@ footer>h2{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 220vh;
+        height: 190vh;
     }
     #proBox {
         display: flex;
@@ -829,14 +828,14 @@ footer>h2{
         padding-top: 0;
     }
     #aboutP>article>menu>li {
-        padding-bottom: 5px;
+        padding-bottom: 10px;
     }
     /*-----------------------@Media 320px My Projects Section-----------------------------------------------------*/
     #myProjects {
         background: linear-gradient(to bottom, #191526 30%, #B1B2B1 );
         display: flex;
         flex-direction: column;
-        height: 165vh;
+        height: 150vh;
     }
     #myProjects>h1 {
         font-size: 15px;
@@ -876,13 +875,13 @@ footer>h2{
         justify-content: center;
         text-align: center;
         bottom: 7vh;
-        right: 31vw;
+        right: 33vw;
         text-decoration: none;
     }
 
     /*-----------------------@Media 320px My Projects Section-----------------------------------------------------*/
     #languages {
-        height: 150vh;
+        height: 140vh;
         background-color: #191526;
         display: flex;
         flex-direction: column;
@@ -1009,7 +1008,7 @@ footer>h2{
     }
     .nav-flex-item-img {
         padding-right: 44px;
-        padding-left: 0px;
+        padding-left: 2px;
     }
     .nav-flex-item-tw {
         font-size: 8px;
