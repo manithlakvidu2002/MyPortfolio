@@ -694,6 +694,19 @@ footer>h2{
     #home>div:nth-child(2){
         display: none;
     }
+    /*#home>div:nth-child(2) {
+        width: 50%;
+        margin: auto;
+        top: 79vw;
+        bottom: 0;
+        position: absolute;
+        right: 33vw;
+    }
+    #home>div:nth-child(2)>img {
+        background-position: center;
+        background-size: cover;
+        height: 119%;
+    }*/
     #home>div:nth-child(1) {
         margin-left: 20px;
         margin-top: 130px;
@@ -2687,6 +2700,1255 @@ footer>h2{
     }
 
     /*-----------------------@Media 768px footer Section-----------------------------------------------------*/
+
+    body>footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        left: 0;
+        right: 0;
+    }
+
+    footer a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    footer>h2{
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        font-size: 3vw;
+        margin: 1.5vh;
+    }
+    h4{
+        font-size: 30px;
+        font-family: "Arial Black";
+    }
+
+    h3{
+        font-size: 30px;
+        font-family: Calibri;
+    }
+
+    h2 {
+        font-family: Arial;
+        font-size: 2.5vw;
+    }
+
+    p {
+        font-size: 1.8vw;
+        color: white;
+    }
+
+
+    /*-----------------------@Media 1024px Header Section-----------------------------------------------------*/
+
+
+    /* Style the header */
+    header {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left:0;
+        right: 0;
+        z-index: 1;
+        height: 40px;
+    }
+
+    header.logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    header>nav {
+        position: absolute;
+        display: inline-block;
+        right: 10px;
+        top: 19px;
+    }
+    #contact:hover{
+        background-color: #B1B2B1;
+        color: #0075FF;
+        transition:  all;
+    }
+
+    nav>ul>a {
+        font-size: 1.5vw;
+        text-decoration: none;
+        color: white;
+        margin-right: 1vw;
+    }
+
+    nav>ul>a:hover{
+        transition: all;
+        color: blue ;
+    }
+    header>nav>ul>a:last-child{
+        align-items: center;
+        padding: 0.3rem;
+        /*margin: 0;*/
+        background: #0075FF;
+        color: rgb(241, 235, 235);
+        /*width: 12%;*/
+        border-radius: 10px;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid #333333;
+    }
+    /*-----------------------@Media 1024px Home Section-----------------------------------------------------*/
+
+    #home {
+        padding-top: 1px;
+        background-color: white;
+        background-color: #191526;
+        border-bottom-left-radius: 150%;
+        border-bottom-right-radius: 150%;
+    }
+
+    #welcome {
+        font-size: 2vw;
+        padding-bottom: 2vh;
+        color: white;
+    }
+
+    #hello {
+        font-size: 2vw;
+        padding-bottom: 3vh;
+        color: white;
+    }
+
+    #article>p:nth-child(1) {
+        font-size: 2vw;
+        padding-top: 2vh;
+        padding-bottom: 3vh;
+    }
+
+    #homenav {
+        padding-top: 3vh;
+    }
+    #homenav>ul{
+        display: flex;
+    }
+    #homenav>ul>a:hover{
+        box-shadow: 0px 5px 5px black;
+        transition: all;
+    }
+    #about{
+        padding-bottom: 0px;
+        padding: 0.3rem;
+        /*margin: 0;*/
+        background: #0075FF;
+        color: rgb(241, 235, 235);
+        width: 10%;
+        border-radius: 10px;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid #333333;
+    }
+    #about:hover{
+        background-color: #B1B2B1;
+        color: #0075FF;
+        transition:  all;
+    }
+
+    #home>div:nth-child(1) {
+        margin-left: 8vw;
+        margin-top: 26vh;
+    }
+
+    #home>div:nth-child(2) {
+        width: 40vw;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+    }
+
+    #home>div:nth-child(2)>img {
+        width: 41vw;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+    }
+
+    #article>p:nth-child(2) {
+        font-size: 1.6vw;
+    }
+
+    section>h2{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+
+    /*-----------------------@Media 1024px Proficiency Section-----------------------------------------------------*/
+    #Proficiency{
+        background-color:#B1B2B1 ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #proBox {
+        width: 84%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    #Proficiency>hgroup {
+        align-self: flex-start;
+        align-self: center;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    #Proficiency>hgroup>h2 {
+        margin-top: 2vh;
+        margin-left: 6.5vw;
+        margin-bottom: 4vh;
+    }
+
+    #proBox>div{
+        border-radius: 30px;
+        width: calc(100%/3.9);
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        background: linear-gradient(to bottom, #191526, #B1B2B1);
+        padding: 15px;
+        box-shadow: 10px 10px 20px black;
+    }
+    #proBox>div:hover{
+        background: linear-gradient(to bottom, #0075FF, #B1B2B1);
+        color: #B1B2B1;
+        transition: 2s all;
+    }
+    #proBox>div:hover h3{
+        color: #191526;
+        transition: 2s all;
+    }
+
+    #proBox>div>div{
+        align-self: center;
+        margin-bottom: 20px;
+    }
+
+    #proBox>div>h3 {
+        font-size: 2.5vw;
+        align-self: center;
+        margin-bottom: 19px;
+        color: #0075FF;
+    }
+
+    #proBox>div>p {
+        font-size: 1.8vw;
+        color: #F7F7F7;
+        text-align: center;
+    }
+
+    /*-----------------------@Media 1024px skills Section-----------------------------------------------------*/
+
+    #skills{
+        background-color: #191526;
+        color: white;
+    }
+
+
+    #skills>h1{
+        text-align: center;
+        padding-top: 75px;
+        margin-bottom: 40px;
+    }
+    #skills>div {
+        position: absolute;
+        width: 69%;
+        top: 80px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+
+    /*-----------------------@Media 1024px aboutme Section-----------------------------------------------------*/
+
+    #aboutme{
+        background: linear-gradient(to bottom, #191526 30%, #B1B2B1 );
+        height: 100vh;
+    }
+    #aboutImg>div:nth-child(1) {
+        padding-top: 17vh;
+        padding-left: 2vw;
+    }
+    #aboutImg>div>img{
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px black;
+    }
+    #aboutImg>div:nth-child(2) {
+        display: inline-block;
+        position: absolute;
+        top: 57vh;
+        left: 20vw;
+        display: inline-block;
+    }
+    #aboutP>hgroup>h3 {
+        padding-bottom: 1.3vh;
+        font-size: 2.3vw;
+    }
+    #aboutP>hgroup>h1 {
+        margin-left: 0;
+        padding-bottom: 1vh;
+        color: white;
+        font-size: 3vw;
+    }
+
+    #aboutP {
+        position: absolute;
+        top: 20vh;
+        right: 0;
+        height: auto;
+        width: 63vw;
+        margin: auto;
+        bottom: 0;
+        padding-right: 2vw;
+    }
+    #aboutP>article>menu {
+        padding-top: 1vw;
+        padding-inline-start: 2vw;
+        color: white;
+        font-size: 1.5vw;
+    }
+    #aboutP>article>menu>li{
+        padding-bottom: 10px;
+    }
+    #aboutP>article>menu>li:hover{
+        color: blue;
+    }
+
+    /*-----------------------@Media 1024px My Projects Section-----------------------------------------------------*/
+
+    #myProjects{
+        background: linear-gradient(to bottom, #191526 30%, #B1B2B1 );
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    #myProjects>h1 {
+        align-self: center;
+        margin-top: 15vh;
+        margin-bottom: 18vh;
+    }
+
+    #myProjects>nav{
+        align-self: center;
+        height: 24%;
+        width: 91%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 122px;
+    }
+
+    #myProjects>nav>div{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #myProjects>nav>div>img{
+        width: calc(100%/4.5);
+        height: 100%;
+        border-radius: 5%;
+        box-shadow: 10px 10px 20px black;
+        transition: 1s all;
+    }
+    #myProjects>nav>div>img:hover{
+        width: 200px;
+        height: 150px;
+        transition: 1s all;
+    }
+
+    #click{
+        position: absolute;
+        align-items: center;
+        padding: 0.3rem;
+        margin: 0;
+        background: #0075FF;
+        color: rgb(241, 235, 235);
+        width: 12vw;
+        border-radius: 2vw;
+        justify-content: center;
+        text-align: center;
+        bottom: 12vh;
+        right: 44vw;
+        text-decoration: none;
+    }
+    #click:hover{
+        background-color: #B1B2B1;
+        color: #0075FF;
+        transition:  all;
+    }
+
+    /*-----------------------@Media 1024px languages Section-----------------------------------------------------*/
+
+
+    #languages{
+        background-color: #191526;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #languages>h1{
+        align-self: center;
+        margin-top: 75px;
+        color: white;
+    }
+
+    #languages>section{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #languagesGrid>div>img{
+        /*box-shadow: 10px 10px 20px black;*/
+        transition: 1s all;
+    }
+
+    #languagesGrid {
+        display: grid;
+        width: 96vw;
+        height: 49vh;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(6,1fr);
+        grid-column-gap: 2vw;
+        grid-row-gap: 5vh;
+        position: absolute;
+        top: 38vh;
+        left: 4vw;
+        right: 0;
+        margin: auto;
+    }
+    #languagesGrid>div>img:hover{
+        width: 90px;
+        height: 90px;
+        transition: 1s all;
+    }
+
+    /*-----------------------@Media 1024px glife Section-----------------------------------------------------*/
+    #glife{
+        background: linear-gradient(to bottom, #191526 30%, #B1B2B1 );
+        height: 100vh;
+    }
+
+    #glife>hgroup>h1 {
+        color: blue;
+        padding-top: 14vh;
+        margin-top: 0;
+        text-align: center;
+    }
+    #glife>hgroup>h3{
+        text-align: center;
+        color: white;
+    }
+    #glife>section {
+        width: 67vw;
+        height: 51vh;
+        top: 70px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+    }
+    #glife>section>div{
+        box-shadow : 5px 5px 10px black;
+    }
+    #glife>section>div:nth-child(1){
+        background: url("assets/IMG_4051.jpg");
+        grid-column: 1/2;
+        grid-row: 1/3;
+        background-position: center;
+        background-size:cover;
+        border-radius: 20px;
+
+    }
+    #glife>section>div:nth-child(4){
+        background: url("assets/manith.jpg");
+        grid-row: 1/3;
+        grid-column:  3/4;
+        background-position: center;
+        background-size:cover;
+        border-radius: 20px;
+    }
+    #glife>section>div:nth-child(2){
+        background: url("assets/IMG_8270.JPG");
+        background-position: center;
+        background-size:cover;
+        border-radius: 20px;
+    }
+    #glife>section>div:nth-child(3){
+        background: url("assets/IMG_0848.jpg");
+        background-position: center;
+        background-size:cover;
+        border-radius: 20px;
+    }
+
+    /*-----------------------@Media 1024px contactMe Section-----------------------------------------------------*/
+    #contactMe>hgroup>h3 {
+        text-align: center;
+        font-size: 2.3vw;
+        padding-top: 14vh;
+    }
+    #contactMe>hgroup>h1 {
+        padding-bottom: 1vh;
+        text-align: center;
+        font-size: 2.6vw;
+        padding-top: 1vh;
+        color: white;
+    }
+    #contactMe {
+        width: 100%;
+        background-color: #191526;
+        height: 110vh;
+    }
+    .nav-flex{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+    .nav-flex-item-on {
+        display: flex;
+        width: 106%;
+        text-align: center;
+    }
+    .nav-flex-item-tw{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        color: white;
+        text-decoration: none;
+        justify-content: space-around;
+    }
+    .nav-flex-item-img {
+        padding-right: 7vw;
+        padding-left: 6vw;
+    }
+    .nav-flex-items{
+        outline: none;
+        text-decoration: none;
+        border: none;
+        color: white;
+        padding-top: 10px;
+    }
+    .contact-flex{
+        width: 100%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+    .contact-item-set{
+        flex: 1;
+        position: relative;
+        max-width: calc(100%/2);
+        padding-top: 5px;
+    }
+    .contact-item-set-sec {
+        flex: 1;
+        position: relative;
+        max-width: calc(100%/2);
+        padding-top: 1vh;
+    }
+    .fealdset {
+        width: 100%;
+        height: 100%;
+        outline: none;
+        text-decoration: none;
+        border: none;
+        padding-right: 0;
+    }
+    .contact-text {
+        padding: 0.5rem;
+        margin: 0;
+        background: #B1B2B1;
+        color: rgb(241, 235, 235);
+        text-transform: none;
+        font-size: 2.5vh;
+        width: 37vw;
+        border-radius: 10px;
+        border: none;
+    }
+    .fealdset>label{
+        color: white;
+        font-family: "Adobe Garamond Pro";
+    }
+    .fealdset>button {
+        align-items: center;
+        padding: 0.3rem;
+        margin: 0;
+        background: #0075FF;
+        color: rgb(241, 235, 235);
+        width: 8vw;
+        border-radius: 10px;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid #333333;
+        position: absolute;
+        right: 0vw;
+    }
+    #send:hover{
+        background-color: #B1B2B1;
+        color: #0075FF;
+        transition:  all;
+    }
+
+    /*-----------------------@Media 1024px footer Section-----------------------------------------------------*/
+
+    body>footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        left: 0;
+        right: 0;
+    }
+
+    footer a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    footer>h2{
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+
+}
+@media all and (min-width: 1025px) and (max-width: 1440px) {
+    h1 {
+        font-size: 2.5vw;
+        /* margin: 1.5vh; */
+    }
+    h4{
+        font-size: 30px;
+        font-family: "Arial Black";
+    }
+
+    h3 {
+        padding-left: 1vw;
+        font-size: 2vw;
+        font-family: Calibri;
+    }
+
+    h2 {
+        font-family: Arial;
+        font-size: 2.5vw;
+    }
+
+    p {
+        font-size: 1.8vw;
+        color: white;
+    }
+
+
+    /*-----------------------@Media 1440px Header Section-----------------------------------------------------*/
+
+
+    /* Style the header */
+    header {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        height: 6.5vh;
+    }
+
+    header.logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    header>nav {
+        position: absolute;
+        display: inline-block;
+        right: 10px;
+        top: 19px;
+    }
+    #contact:hover{
+        background-color: #B1B2B1;
+        color: #0075FF;
+        transition:  all;
+    }
+
+    nav>ul>a {
+        font-size: 1.3vw;
+        text-decoration: none;
+        color: white;
+        margin-right: 1vw;
+    }
+
+    nav>ul>a:hover{
+        transition: all;
+        color: blue ;
+    }
+    header>nav>ul>a:last-child{
+        align-items: center;
+        padding: 0.3rem;
+        /*margin: 0;*/
+        background: #0075FF;
+        color: rgb(241, 235, 235);
+        /*width: 12%;*/
+        border-radius: 10px;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid #333333;
+    }
+    /*-----------------------@Media 1440px Home Section-----------------------------------------------------*/
+
+    #home {
+        padding-top: 1px;
+        background-color: white;
+        background-color: #191526;
+        border-bottom-left-radius: 150%;
+        border-bottom-right-radius: 150%;
+    }
+
+    #welcome {
+        font-size: 2vw;
+        padding-bottom: 2vh;
+        color: white;
+    }
+
+    #hello {
+        padding-left: 0;
+        font-size: 2vw;
+        padding-bottom: 3vh;
+        color: white;
+    }
+
+    #article>p:nth-child(1) {
+        font-size: 2vw;
+        padding-top: 2vh;
+        padding-bottom: 3vh;
+    }
+
+    #homenav {
+        padding-top: 3vh;
+    }
+    #homenav>ul{
+        display: flex;
+    }
+    #homenav>ul>a{
+        font-size: 1vh;
+    }
+    #homenav>ul>a:nth-child(1){
+        font-size: 2vh;
+    }
+    #homenav>ul>a:nth-child(2){
+        font-size: 2vh;
+    }
+    #homenav>ul>a:hover{
+        box-shadow: 0px 5px 5px black;
+        transition: all;
+    }
+    #about{
+        padding-bottom: 0px;
+        padding: 0.3rem;
+        /*margin: 0;*/
+        background: #0075FF;
+        color: rgb(241, 235, 235);
+        width: 10%;
+        border-radius: 10px;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid #333333;
+    }
+    #about:hover{
+        background-color: #B1B2B1;
+        color: #0075FF;
+        transition:  all;
+    }
+
+    #home>div:nth-child(1) {
+        margin-left: 8vw;
+        margin-top: 26vh;
+    }
+
+    #home>div:nth-child(2) {
+        width: 40vw;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+    }
+
+    #home>div:nth-child(2)>img {
+        width: 37vw;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+    }
+
+    #article>p:nth-child(2) {
+        font-size: 1.6vw;
+    }
+
+    section>h2{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+
+    /*-----------------------@Media 1440px Proficiency Section-----------------------------------------------------*/
+    #Proficiency{
+        background-color:#B1B2B1 ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #proBox {
+        width: 84%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    #Proficiency>hgroup {
+        align-self: flex-start;
+        align-self: center;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    #Proficiency>hgroup>h2 {
+        margin-top: 2vh;
+        margin-left: 1.7vw;
+        margin-bottom: 4vh;
+    }
+
+    #proBox>div{
+        border-radius: 30px;
+        width: calc(100%/3.9);
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        background: linear-gradient(to bottom, #191526, #B1B2B1);
+        padding: 15px;
+        box-shadow: 10px 10px 20px black;
+    }
+    #proBox>div:hover{
+        background: linear-gradient(to bottom, #0075FF, #B1B2B1);
+        color: #B1B2B1;
+        transition: 2s all;
+    }
+    #proBox>div:hover h3{
+        color: #191526;
+        transition: 2s all;
+    }
+
+    #proBox>div>div{
+        align-self: center;
+        margin-bottom: 20px;
+    }
+
+    #proBox>div>h3 {
+        font-size: 2.5vw;
+        align-self: center;
+        margin-bottom: 19px;
+        color: #0075FF;
+    }
+
+    #proBox>div>p {
+        font-size: 1.8vw;
+        color: #F7F7F7;
+        text-align: center;
+    }
+
+    /*-----------------------@Media 1440px skills Section-----------------------------------------------------*/
+
+    #skills{
+        background-color: #191526;
+        color: white;
+    }
+
+
+    #skills>h1{
+        text-align: center;
+        padding-top: 75px;
+        margin-bottom: 40px;
+    }
+    #skills>div {
+        position: absolute;
+        width: 69%;
+        top: 80px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+
+    /*-----------------------@Media 1440px aboutme Section-----------------------------------------------------*/
+
+    #aboutme{
+        background: linear-gradient(to bottom, #191526 30%, #B1B2B1 );
+        height: 100vh;
+    }
+    #aboutImg>div:nth-child(1) {
+        padding-top: 17vh;
+        padding-left: 2vw;
+    }
+    #aboutImg>div>img{
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px black;
+    }
+    #aboutImg>div:nth-child(2) {
+        display: inline-block;
+        position: absolute;
+        top: 57vh;
+        left: 20vw;
+        display: inline-block;
+    }
+    #aboutP>hgroup>h3 {
+        padding-bottom: 1.3vh;
+        font-size: 2.3vw;
+    }
+    #aboutP>hgroup>h1 {
+        margin-left: 0;
+        padding-bottom: 1vh;
+        color: white;
+        font-size: 3vw;
+    }
+
+    #aboutP {
+        position: absolute;
+        top: 20vh;
+        right: 0;
+        height: auto;
+        width: 63vw;
+        margin: auto;
+        bottom: 0;
+        padding-right: 2vw;
+    }
+    #aboutP>article>menu {
+        padding-top: 1vw;
+        padding-inline-start: 2vw;
+        color: white;
+        font-size: 1.5vw;
+    }
+    #aboutP>article>menu>li{
+        padding-bottom: 10px;
+    }
+    #aboutP>article>menu>li:hover{
+        color: blue;
+    }
+
+    /*-----------------------@Media 1440px My Projects Section-----------------------------------------------------*/
+
+    #myProjects{
+        background: linear-gradient(to bottom, #191526 30%, #B1B2B1 );
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    #myProjects>h1 {
+        align-self: center;
+        margin-top: 15vh;
+        margin-bottom: 18vh;
+    }
+
+    #myProjects>nav{
+        align-self: center;
+        height: 24%;
+        width: 91%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 122px;
+    }
+
+    #myProjects>nav>div{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #myProjects>nav>div>img{
+        width: calc(100%/4.5);
+        height: 100%;
+        border-radius: 5%;
+        box-shadow: 10px 10px 20px black;
+        transition: 1s all;
+    }
+    #myProjects>nav>div>img:hover{
+        width: 200px;
+        height: 150px;
+        transition: 1s all;
+    }
+
+    #click{
+        position: absolute;
+        align-items: center;
+        padding: 0.3rem;
+        margin: 0;
+        background: #0075FF;
+        color: rgb(241, 235, 235);
+        width: 12vw;
+        border-radius: 2vw;
+        justify-content: center;
+        text-align: center;
+        bottom: 12vh;
+        right: 44vw;
+        text-decoration: none;
+    }
+    #click:hover{
+        background-color: #B1B2B1;
+        color: #0075FF;
+        transition:  all;
+    }
+
+    /*-----------------------@Media 1440px languages Section-----------------------------------------------------*/
+
+
+    #languages{
+        background-color: #191526;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #languages>h1{
+        align-self: center;
+        margin-top: 75px;
+        color: white;
+    }
+
+    #languages>section{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #languagesGrid>div>img{
+        /*box-shadow: 10px 10px 20px black;*/
+        transition: 1s all;
+    }
+
+    #languagesGrid {
+        display: grid;
+        width: 96vw;
+        height: 49vh;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(6,1fr);
+        grid-column-gap: 2vw;
+        grid-row-gap: 5vh;
+        position: absolute;
+        top: 38vh;
+        left: 4vw;
+        right: 0;
+        margin: auto;
+    }
+    #languagesGrid>div>img:hover{
+        width: 90px;
+        height: 90px;
+        transition: 1s all;
+    }
+
+    /*-----------------------@Media 1440px glife Section-----------------------------------------------------*/
+    #glife{
+        background: linear-gradient(to bottom, #191526 30%, #B1B2B1 );
+        height: 100vh;
+    }
+
+    #glife>hgroup>h1 {
+        color: blue;
+        padding-top: 14vh;
+        margin-top: 0;
+        text-align: center;
+    }
+    #glife>hgroup>h3{
+        text-align: center;
+        color: white;
+    }
+    #glife>section {
+        width: 67vw;
+        height: 51vh;
+        top: 70px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+    }
+    #glife>section>div{
+        box-shadow : 5px 5px 10px black;
+    }
+    #glife>section>div:nth-child(1){
+        background: url("assets/IMG_4051.jpg");
+        grid-column: 1/2;
+        grid-row: 1/3;
+        background-position: center;
+        background-size:cover;
+        border-radius: 20px;
+
+    }
+    #glife>section>div:nth-child(4){
+        background: url("assets/manith.jpg");
+        grid-row: 1/3;
+        grid-column:  3/4;
+        background-position: center;
+        background-size:cover;
+        border-radius: 20px;
+    }
+    #glife>section>div:nth-child(2){
+        background: url("assets/IMG_8270.JPG");
+        background-position: center;
+        background-size:cover;
+        border-radius: 20px;
+    }
+    #glife>section>div:nth-child(3){
+        background: url("assets/IMG_0848.jpg");
+        background-position: center;
+        background-size:cover;
+        border-radius: 20px;
+    }
+
+    /*-----------------------@Media 1440px contactMe Section-----------------------------------------------------*/
+    #contactMe>hgroup>h3 {
+        text-align: center;
+        font-size: 2.3vw;
+        padding-top: 12vh;
+    }
+    #contactMe>hgroup>h1 {
+        padding-bottom: 1vh;
+        text-align: center;
+        font-size: 2.6vw;
+        padding-top: 1vh;
+        color: white;
+    }
+    #contactMe {
+        width: 100%;
+        background-color: #191526;
+        height: 110vh;
+    }
+    .nav-flex{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+    .nav-flex-item-on {
+        display: flex;
+        width: 106%;
+        text-align: center;
+    }
+    .nav-flex-item-tw{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        color: white;
+        text-decoration: none;
+        justify-content: space-around;
+    }
+    .nav-flex-item-img {
+        padding-right: 6vw;
+        padding-left: 7vw;
+    }
+    .nav-flex-items{
+        outline: none;
+        text-decoration: none;
+        border: none;
+        color: white;
+        padding-top: 10px;
+    }
+    .contact-flex{
+        width: 100%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+    .contact-item-set{
+        flex: 1;
+        position: relative;
+        max-width: calc(100%/2);
+        padding-top: 5px;
+    }
+    .contact-item-set-sec {
+        flex: 1;
+        position: relative;
+        max-width: calc(100%/2);
+        padding-top: 1vh;
+    }
+    .fealdset {
+        width: 100%;
+        height: 100%;
+        outline: none;
+        text-decoration: none;
+        border: none;
+        padding-right: 0;
+    }
+    .contact-text {
+        padding: 0.5rem;
+        margin: 0;
+        background: #B1B2B1;
+        color: rgb(241, 235, 235);
+        text-transform: none;
+        font-size: 2.5vh;
+        width: 37vw;
+        border-radius: 10px;
+        border: none;
+    }
+    .fealdset>label{
+        color: white;
+        font-family: "Adobe Garamond Pro";
+    }
+    .fealdset>button {
+        align-items: center;
+        padding: 0.3rem;
+        margin: 0;
+        background: #0075FF;
+        color: rgb(241, 235, 235);
+        width: 8vw;
+        border-radius: 10px;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid #333333;
+        position: absolute;
+        right: 0vw;
+    }
+    #send:hover{
+        background-color: #B1B2B1;
+        color: #0075FF;
+        transition:  all;
+    }
+
+    /*-----------------------@Media 1440px footer Section-----------------------------------------------------*/
 
     body>footer {
         background-color: #333;
