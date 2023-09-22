@@ -694,6 +694,14 @@ footer>h2{
     #home>div:nth-child(2){
         display: none;
     }
+    #home {
+        height: 80vh;
+        padding-top: 1px;
+        background-color: white;
+        background-color: #191526;
+        border-bottom-left-radius: 450px;
+        border-bottom-right-radius: 450px;
+    }
     /*#home>div:nth-child(2) {
         width: 50%;
         margin: auto;
@@ -742,7 +750,7 @@ footer>h2{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 190vh;
+        height: 160vh;
     }
     #proBox {
         display: flex;
@@ -785,7 +793,11 @@ footer>h2{
         color: #F7F7F7;
     }
     /*-----------------------@Media 320px Skills Section-----------------------------------------------------*/
-
+    #skills {
+        height: 70vh;
+        background-color: #191526;
+        color: white;
+    }
     #skills>h1 {
         text-align: center;
         padding-top: 65px;
@@ -803,6 +815,10 @@ footer>h2{
     }
 
     /*-----------------------@Media 320px About Me Section-----------------------------------------------------*/
+    #aboutme {
+        background: linear-gradient(to bottom, #191526 30%, #B1B2B1 );
+        height: 80vh;
+    }
     #aboutImg>div:nth-child(1) {
         padding-top: 65px;
         padding-left: 7px;
@@ -855,7 +871,7 @@ footer>h2{
         background: linear-gradient(to bottom, #191526 30%, #B1B2B1 );
         display: flex;
         flex-direction: column;
-        height: 150vh;
+        height: 132vh;
     }
     #myProjects>h1 {
         font-size: 15px;
@@ -901,7 +917,7 @@ footer>h2{
 
     /*-----------------------@Media 320px My Projects Section-----------------------------------------------------*/
     #languages {
-        height: 140vh;
+        height: 116vh;
         background-color: #191526;
         display: flex;
         flex-direction: column;
@@ -1003,6 +1019,11 @@ footer>h2{
 
 
     /*-----------------------@Media 320px Contact Me Section-----------------------------------------------------*/
+    #contactMe {
+        height: 84vh;
+        width: 100%;
+        background-color: #191526;
+    }
     #contactMe>hgroup>h3 {
         font-size: 15px;
         text-align: center;
@@ -1191,7 +1212,15 @@ footer>h2{
         transition: all;
         color: blue;
     }
-    /*-----------------------@Media 375px Home Section----------------------------------------------------------------*/
+    /*-----------------------@Media 375px Home Section-------------------------------------------------------*/
+    #home {
+        height: 80vh;
+        padding-top: 1px;
+        background-color: white;
+        background-color: #191526;
+        border-bottom-left-radius: 450px;
+        border-bottom-right-radius: 450px;
+    }
     #home>div:nth-child(2){
         display: none;
     }
@@ -1230,7 +1259,7 @@ footer>h2{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 190vh;
+        height: 155vh;
     }
     #proBox {
         display: flex;
@@ -1273,6 +1302,11 @@ footer>h2{
         color: #F7F7F7;
     }
     /*-----------------------@Media 375px Skills Section-----------------------------------------------------*/
+    #skills {
+        height: 80vh;
+        background-color: #191526;
+        color: white;
+    }
 
     #skills>h1 {
         text-align: center;
@@ -1291,6 +1325,10 @@ footer>h2{
     }
 
     /*-----------------------@Media 375px About Me Section-----------------------------------------------------*/
+    #aboutme {
+        background: linear-gradient(to bottom, #191526 30%, #B1B2B1 );
+        height: 75vh;
+    }
     #aboutImg>div:nth-child(1) {
         padding-top: 65px;
         padding-left: 7px;
@@ -1301,7 +1339,7 @@ footer>h2{
     }
     #aboutImg>div:nth-child(2) {
         position: absolute;
-        top: 30%;
+        top: 35%;
         left: 15%;
     }
     #aboutImg>div:nth-child(2)>img {
@@ -1343,7 +1381,7 @@ footer>h2{
         background: linear-gradient(to bottom, #191526 30%, #B1B2B1 );
         display: flex;
         flex-direction: column;
-        height: 170vh;
+        height: 146vh;
     }
     #myProjects>h1 {
         font-size: 15px;
@@ -1389,7 +1427,7 @@ footer>h2{
 
     /*-----------------------@Media 375px My Projects Section-----------------------------------------------------*/
     #languages {
-        height: 150vh;
+        height: 120vh;
         background-color: #191526;
         display: flex;
         flex-direction: column;
@@ -1491,6 +1529,11 @@ footer>h2{
 
 
     /*-----------------------@Media 375px Contact Me Section-----------------------------------------------------*/
+    #contactMe {
+        height: 83vh;
+        width: 100%;
+        background-color: #191526;
+    }
     #contactMe>hgroup>h3 {
         font-size: 15px;
         text-align: center;
@@ -1684,7 +1727,15 @@ footer>h2{
         transition: all;
         color: blue;
     }
-    /*-----------------------@Media 425px Home Section----------------------------------------------------------------*/
+    /*-----------------------@Media 425px Home Section--------------------------------------------------------*/
+    #home {
+        height: 81vh;
+        padding-top: 1px;
+        background-color: white;
+        background-color: #191526;
+        border-bottom-left-radius: 450px;
+        border-bottom-right-radius: 450px;
+    }
     #home>div:nth-child(2){
         display: none;
     }
@@ -1723,7 +1774,7 @@ footer>h2{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 190vh;
+        height: 147vh;
     }
     #proBox {
         display: flex;
@@ -1766,6 +1817,11 @@ footer>h2{
         color: #F7F7F7;
     }
     /*-----------------------@Media 425px Skills Section-----------------------------------------------------*/
+    #skills {
+        height: 83vh;
+        background-color: #191526;
+        color: white;
+    }
 
     #skills>h1 {
         text-align: center;
@@ -1784,6 +1840,10 @@ footer>h2{
     }
 
     /*-----------------------@Media 425px About Me Section-----------------------------------------------------*/
+    #aboutme {
+        background: linear-gradient(to bottom, #191526 30%, #B1B2B1 );
+        height: 80vh;
+    }
     #aboutImg>div:nth-child(1) {
         padding-top: 65px;
         padding-left: 7px;
@@ -1794,7 +1854,7 @@ footer>h2{
     }
     #aboutImg>div:nth-child(2) {
         position: absolute;
-        top: 30%;
+        top: 30vh;
         left: 15%;
     }
     #aboutImg>div:nth-child(2)>img {
@@ -1836,7 +1896,7 @@ footer>h2{
         background: linear-gradient(to bottom, #191526 30%, #B1B2B1 );
         display: flex;
         flex-direction: column;
-        height: 190vh;
+        height: 158vh;
     }
     #myProjects>h1 {
         font-size: 15px;
@@ -1882,7 +1942,7 @@ footer>h2{
 
     /*-----------------------@Media 425px My Projects Section-----------------------------------------------------*/
     #languages {
-        height: 150vh;
+        height: 120vh;
         background-color: #191526;
         display: flex;
         flex-direction: column;
@@ -1984,6 +2044,11 @@ footer>h2{
 
 
     /*-----------------------@Media 425px Contact Me Section-----------------------------------------------------*/
+    #contactMe {
+        height: 84vh;
+        width: 100%;
+        background-color: #191526;
+    }
     #contactMe>hgroup>h3 {
         font-size: 15px;
         text-align: center;
