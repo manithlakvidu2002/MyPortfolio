@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <title>Home </title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/css/common-styles.css" rel="stylesheet">
+    <link href="assets/css/home-styles.css" rel="stylesheet">
+    <link href="assets/Bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="assets/Bootstrap/js/bootstrap.js"></script>
+    <link href="assets/fontawsome/css/all.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg z-1" style="background-color: #656565FF;">
+        <div class="container-fluid">
+            <button aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    data-bs-target="#navbarText" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link active " href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage_customer.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage_store.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage_orders.html">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="place_order.html">Place Order</a>
+                    </li>
+                </ul>
+
+
+                <a href="index.html" style="user-select: none; text-decoration: none "> Logout &nbsp;<i
+                        class="fa-solid fa-right-from-bracket"
+                        style="color: #ffffff;"></i>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="row "
+     style=" height: 100vh ; width: 100% ; position: absolute; top: 0; bottom: 0; left: 0; right: 0 ; margin: auto; z-index: -100;">
+    <div class="col-12 " style="height: 85%; background-color: rgb(185,185,185)"></div>
+    <div class="col-12 " style="height: 15%; background-color: #444444"></div>
+</div>
+
+<main>
+    <section class="row z-0 w-75 h-25 position-absolute top-50 start-50 translate-middle"
+             style="column-gap: 1%; row-gap: 5%">
+        <button class="col btn btn-primary text-light " >
+            <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+            <br> Manage <br> Customer
+        </button>
+        <button class="col btn btn-primary text-light " >
+            <i class="fa-solid fa-store" style="color: #ffffff;"></i>
+            <br> Manage <br> Store
+        </button>
+        <button class="col btn btn-primary text-light ">
+            <i class="fa-solid fa-border-all" style="color: #ffffff;"></i> <br>
+            Manage <br> Orders
+        </button>
+        <button class="col btn btn-primary text-light " >
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+            <br>Place Order
+        </button>
+    </section>
+</main>
+</body>
+</html>

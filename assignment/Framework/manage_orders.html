@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <title>Orders | SUN POS System</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/css/common-styles.css" rel="stylesheet">
+    <link href="assets/css/home-styles.css" rel="stylesheet">
+    <link href="assets/Bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="assets/Bootstrap/js/bootstrap.js"></script>
+    <link href="assets/fontawsome/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body >
+<header>
+    <nav class="navbar navbar-expand-lg z-1" style="background-color: #656565;">
+        <div class="container-fluid">
+            <button aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    data-bs-target="#navbarText" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage_customer.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage_store.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link " href="manage_orders.html">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="place_order.html">Place Order</a>
+                    </li>
+                </ul>
+
+
+                <a href="index.html" style="user-select: none; text-decoration: none "> Logout &nbsp;<i
+                        class="fa-solid fa-right-from-bracket"
+                        style="color: #ffffff;"></i>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="row "
+     style=" height: 100vh ; width: 100% ; position: absolute; top: 0; bottom: 0; left: 0; right: 0 ; margin: auto; z-index: -100;">
+    <div class="col-12 " style="height: 85%; background-color: rgb(255,255,255)"></div>
+    <div class="col-12 " style="height: 15%; background-color: #444444"></div>
+</div>
+
+<main class="container-fluid">
+
+    <section>
+        <section class="row p-2" style="height: 100%">
+            <section class="col-lg-8 col-12  bg-body" style="height: 100%">
+
+                <div class="input-group row mt-2 mb-1">
+                    <div class="col-11">
+                        <input class="form-control" type="search">
+                    </div>
+                    <button class="btn btn-primary col-1" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <div class="table-responsive ">
+                    <table class="table table-hover">
+                        <thead class="table-info">
+                        <tr>
+                            <th scope="col">Order ID</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Customer ID</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                        <tr>
+                            <td>O001</td>
+                            <td>2022/02/25</td>
+                            <td>C001</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr>
+                            <td>O001</td>
+                            <td>2022/02/25</td>
+                            <td>C001</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr>
+                            <td>O001</td>
+                            <td>2022/02/25</td>
+                            <td>C001</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr>
+                            <td>O001</td>
+                            <td>2022/02/25</td>
+                            <td>C001</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr>
+                            <td>O001</td>
+                            <td>2022/02/25</td>
+                            <td>C001</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr>
+                            <td>O001</td>
+                            <td>2022/02/25</td>
+                            <td>C001</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr>
+                            <td>O001</td>
+                            <td>2022/02/25</td>
+                            <td>C001</td>
+                            <td>5000</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="col-lg-4 col-12 vh-75 bg-body">
+                <div class="text-center mt-2 p-1" style="background-color: #442994 ; color:white;">
+                    <i class="fa-solid fa-border-all" style="color: #ffffff;"></i>
+                    Manage Order
+                </div>
+                <div>
+                    <div class="mt-2">
+                        <button class="btn btn-primary" type="button">Edit</button>
+                        <button class="btn btn-primary" type="button">New</button>
+                    </div>
+                    <div class="row mt-2 ">
+                        <label class="col-4 mt-2">OrderID</label>
+                        <input class="col-7 mt-2">
+
+                        <label class="col-4 mt-2">Date</label>
+                        <input class="col-7 mt-2">
+
+                        <label class="col-4 mt-2">Customer ID</label>
+                        <input class="col-7 mt-2">
+
+                        <label class="col-4 mt-2">Price</label>
+                        <input class="col-7 mt-2">
+                    </div>
+                    <div class="mt-2 text-end" style="width: 100%">
+                        <button class="btn btn-success" type="button">Save</button>
+                        <button class="btn btn-primary" type="button">Cancel</button>
+                        <button class="btn btn-danger" type="button">Delete</button>
+
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+</main>
+
+</body>
+</html>
