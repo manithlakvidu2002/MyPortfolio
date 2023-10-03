@@ -220,21 +220,21 @@
                             </div>
                             <div class="row mt-2 ">
                                 <label class="col-4 mt-2">ID</label>
-                                <input class="col-7 mt-2">
+                                <input class="col-7 mt-2" id="id">
 
                                 <label class="col-4 mt-2">Name</label>
-                                <input class="col-7 mt-2">
+                                <input class="col-7 mt-2" id="name">
 
                                 <label class="col-4 mt-2">Address</label>
-                                <input class="col-7 mt-2">
+                                <input class="col-7 mt-2" id="address">
 
                                 <label class="col-4 mt-2">Salary</label>
-                                <input class="col-7 mt-2">
+                                <input class="col-7 mt-2" id="salary">
                             </div>
                             <div class="mt-2 text-end" style="width: 100%">
-                                <button class="btn btn-success" type="button">Save</button>
-                                <button class="btn btn-primary" type="button">Cancel</button>
-                                <button class="btn btn-danger" type="button">Delete</button>
+                                <button id="customersavebtn" class="btn btn-success" type="button">Save</button>
+                                <button id="cuscancel" class="btn btn-primary" type="button">Cancel</button>
+                                <button id="cusdelete" class="btn btn-danger" type="button">Delete</button>
                             </div>
                         </div>
                     </section>
@@ -680,37 +680,27 @@
                 }
 
                 /*/////////////////////////////////////////*/
-                document.getElementById("btnCustomer").addEventListener("click", function () {
+                const savebtn = document.querySelector("#customersavebtn");
+                const cusnam = document.querySelector("#name");
+                const customerid = document.querySelector("#id");
+                const address = document.querySelector("#address");
+                const Salary = document.querySelector("#salary");
 
-                    let id = document.getElementById("txtCustomerID").value;
-                    let name = document.getElementById("txtCustomerName").value;
-                    let address = document.getElementById("txtCustomerAddress").value;
-                    let salary = document.getElementById("txtCustomerSalary").value;
+                const customer = new Array();
 
-                    console.log(id, name, address, salary);
+                var cus={
+                    name: cusnam.value,
+                    id: customerid.value,
+                    address: address.value,
+                    salary: Salary.value,
+                };
 
-                    let tBody = document.getElementById("tblCustomer");
+                savebtn.addEventListener("click",function(){
+                    customer.push(cus);
+                    console.log(customer);
+                });
 
-                    let tr = document.createElement("tr");
 
-                    let col1 = document.createElement("td");
-                    let col2 = document.createElement("td");
-                    let col3 = document.createElement("td");
-                    let col4 = document.createElement("td");
-
-                    col1.textContent = id;
-                    col2.textContent = name;
-                    col3.textContent = address;
-                    col4.textContent = salary;
-
-                    tr.appendChild(col1);
-                    tr.appendChild(col2);
-                    tr.appendChild(col3);
-                    tr.appendChild(col4);
-
-                    tBody.appendChild(tr);
-                    }
-                );
             </script>
     </body>
 </html>
