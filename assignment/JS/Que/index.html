@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Que</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+        section {
+            width: 70vw;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        section > div {
+            flex-grow: 1;
+            height: 33%;
+            border: 1px solid black;
+        }
+
+        section > div:first-child {
+            align-self: start;
+        }
+
+        section > div:last-child {
+            align-self: end;
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+</head>
+<body>
+
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+<script>
+
+    //colors (store 6 colors in a array)
+    let array = new Array('red','green','blue','orange','purple');
+    let div = document.querySelectorAll('div');
+
+
+    setInterval(function(){
+        for(let i in array){
+            div[i].style.backgroundColor = (array[i]);
+        }
+
+        array.unshift(array[4]);
+        array.pop();
+
+    },1000);
+
+
+
+</script>
+</body>
+</html>

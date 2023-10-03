@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width initial-scale=1" name="viewport">
+        <title>POS System</title>
+        <link href="assets/css/normalize.css" rel="stylesheet">
+        <link href="assets/css/common-styles.css" rel="stylesheet">
+        <link href="assets/css/home-styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.css">
+        <script src="assets/Bootstrap/js/bootstrap.js"></script>
+        <link href="assets/fontawsome/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body style="background-color: #ffffff">
+
+        <header id="navigation-bar">
+
+            <nav class="navbar navbar-expand-lg z-1" style="background-color: #4f4f4f;">
+                <div class="container-fluid">
+                    <button aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+                            class="navbar-toggler"
+                            data-bs-target="#navbarText" data-bs-toggle="collapse" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" onclick="goHome()">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   onclick="mngCustomer()">Customer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" onclick="mngStore()">Store</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" onclick="mngOrder()">Orders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" onclick="placeOrder()">Place Order</a>
+                            </li>
+                        </ul>
+
+                        <a onclick="logoutBtn()" style="user-select: none; text-decoration: none "> Logout &nbsp;<i
+                                class="fa-solid fa-right-from-bracket"
+                                style="color: #ffffff;"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="row"
+             style=" height: 100vh ; width: 100% ; position: absolute; top: 0; bottom: 0; left: 0; right: 0 ;
+             margin: auto; z-index: -100;">
+            <div class="col-12 " style="height: 85%; background-color: #9d9d9d"></div>
+            <div class="col-12 " style="height: 15%; background-color: #383838"></div>
+        </div>
+
+        <!--/////////////Login/////////////-->
+        <section class=" position-absolute top-50 start-50 translate-middle bg-body w-25 " id="login" style="height: 60%">
+
+            <section class="position-relative  w-100 h-50">
+                <img class="position-absolute start-50 top-50 translate-middle" src="assets/images/2903544.jpg" width="60%">
+            </section>
+
+            <section class="position-relative w-100 h-50">
+                <div class="container position-absolute start-50 top-50 translate-middle">
+                    <form method="post">
+                        <section class="mb-4">
+                            <div class="form-group row m-1">
+                                <label class="col-md-4 col-12" for="username">Username </label>
+                                <input class="col-md-8 col-12" id="username" name="username" type="text">
+                            </div>
+                            <div class="form-group row m-1">
+                                <label class="col-sm-4 col-12" for="password" style="color: #1E1E1E">Password </label>
+                                <input class="col-sm-8 col-12" id="password" name="password" type="password">
+                            </div>
+                        </section>
+                        <input class="btn w-100 " onclick="loginBtn()"
+                               style="background-color: #191526; color: white;" type="button" value="Login">
+                    </form>
+                </div>
+            </section>
+        </section>
+
+    <!--/////////////Home/////////////-->
+        <main id="home">
+            <section class="row z-0 w-75 h-25 position-absolute top-50 start-50 translate-middle"
+                     style="column-gap: 1%; row-gap: 5%">
+                <button style="background-color: #191526" class="col btn  text-light " onclick="mngCustomer()">
+                    <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                    <br> Manage <br> Customer
+                </button>
+                <button style="background-color: #191526" class="col btn text-light " onclick="mngStore()">
+                    <i class="fa-solid fa-store" style="color: #ffffff;"></i>
+                    <br> Manage <br> Store
+                </button>
+                <button style="background-color: #191526" class="col btn text-light " onclick="mngOrder()">
+                    <i class="fa-solid fa-border-all" style="color: #ffffff;"></i> <br>
+                    Manage <br> Orders
+                </button>
+                <button style="background-color: #191526" class="col btn text-light " onclick="placeOrder()">
+                    <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    <br>Place Order
+                </button>
+            </section>
+        </main>
+
+        <!--/////////////manage customer/////////////-->
+        <main class="container-fluid" id="manage-customer">
+
+            <section>
+                <section class="row p-2" style="height: 100%">
+                    <section class="col-lg-8 col-12  bg-body" style="height: 100%">
+
+                        <div class="input-group row mt-2 mb-1">
+                            <div class="col-11">
+                                <input class="form-control" type="search">
+                            </div>
+                            <button class="btn btn-primary col-1" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+
+                        <div class="table-responsive " >
+                            <table class="table table-hover">
+                                <thead class="table-info">
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Address</th>
+                                    <th scope="col">Salary</th>
+                                </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                <tr>
+                                    <td>c001</td>
+                                    <td>Manith</td>
+                                    <td>Galle</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>c002</td>
+                                    <td>Kasun</td>
+                                    <td>Waduraba</td>
+                                    <td>4500</td>
+                                </tr>
+                                <tr>
+                                    <td>c003</td>
+                                    <td>Malith</td>
+                                    <td>Wakwella</td>
+                                    <td>5000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>c004</td>
+                                    <td>Sachin</td>
+                                    <td>Galle</td>
+                                    <td>6000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>c005</td>
+                                    <td>Nimal</td>
+                                    <td>Galle</td>
+                                    <td>2000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>c006</td>
+                                    <td>Kamal</td>
+                                    <td>Panadura</td>
+                                    <td>5000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>c007</td>
+                                    <td>Chamara</td>
+                                    <td>Colombo</td>
+                                    <td>3000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>c008</td>
+                                    <td>Nalin</td>
+                                    <td>Galle</td>
+                                    <td>5500</td>
+                                </tr>
+
+                                <tr>
+                                    <td>c009</td>
+                                    <td>Hasindu</td>
+                                    <td>Galle</td>
+                                    <td>7000</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!--///////////////////////////////////-->
+                    <section class="col-lg-4 col-12 vh-75 bg-body">
+                        <div class="text-center mt-2 p-1" style="background-color: #442994 ; color:white;">
+                            <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                            Manage Customer
+                        </div>
+                        <div>
+                            <div class="mt-2">
+                                <button class="btn btn-primary" type="button">Edit</button>
+                                <button class="btn btn-primary" type="button">New</button>
+                            </div>
+                            <div class="row mt-2 ">
+                                <label class="col-4 mt-2">ID</label>
+                                <input class="col-7 mt-2">
+
+                                <label class="col-4 mt-2">Name</label>
+                                <input class="col-7 mt-2">
+
+                                <label class="col-4 mt-2">Address</label>
+                                <input class="col-7 mt-2">
+
+                                <label class="col-4 mt-2">Salary</label>
+                                <input class="col-7 mt-2">
+                            </div>
+                            <div class="mt-2 text-end" style="width: 100%">
+                                <button class="btn btn-success" type="button">Save</button>
+                                <button class="btn btn-primary" type="button">Cancel</button>
+                                <button class="btn btn-danger" type="button">Delete</button>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </main>
+
+        <!--/////////////manage orders/////////////-->
+        <main class="container-fluid" id="mng-orders">
+
+            <section>
+                <section class="row p-2" style="height: 100%">
+                    <section class="col-lg-8 col-12  bg-body" style="height: 100%">
+
+                        <div class="input-group row mt-2 mb-1">
+                            <div class="col-11">
+                                <input class="form-control" type="search">
+                            </div>
+                            <button class="btn btn-primary col-1" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+
+                        <div class="table-responsive ">
+                            <table class="table table-hover">
+                                <thead class="table-info">
+                                <tr>
+                                    <th scope="col">Order ID</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Customer ID</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                <tr>
+                                    <td>O001</td>
+                                    <td>2022/02/25</td>
+                                    <td>C001</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>O001</td>
+                                    <td>2022/02/25</td>
+                                    <td>C001</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>O001</td>
+                                    <td>2022/02/25</td>
+                                    <td>C001</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>O001</td>
+                                    <td>2022/02/25</td>
+                                    <td>C001</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>O001</td>
+                                    <td>2022/02/25</td>
+                                    <td>C001</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>O001</td>
+                                    <td>2022/02/25</td>
+                                    <td>C001</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>O001</td>
+                                    <td>2022/02/25</td>
+                                    <td>C001</td>
+                                    <td>5000</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!--///////////////////////////////////-->
+                    <section class="col-lg-4 col-12 vh-75 bg-body">
+                        <div class="text-center mt-2 p-1" style="background-color: #442994 ; color:white;">
+                            <i class="fa-solid fa-border-all" style="color: #ffffff;"></i>
+                            Manage Order
+                        </div>
+                        <div>
+                            <div class="mt-2">
+                                <button class="btn btn-primary" type="button">Edit</button>
+                                <button class="btn btn-primary" type="button">New</button>
+                            </div>
+                            <div class="row mt-2 ">
+                                <label class="col-4 mt-2">OrderID</label>
+                                <input class="col-7 mt-2">
+
+                                <label class="col-4 mt-2">Date</label>
+                                <input class="col-7 mt-2">
+
+                                <label class="col-4 mt-2">Customer ID</label>
+                                <input class="col-7 mt-2">
+
+                                <label class="col-4 mt-2">Price</label>
+                                <input class="col-7 mt-2">
+                            </div>
+                            <div class="mt-2 text-end" style="width: 100%">
+                                <button class="btn btn-success" type="button">Save</button>
+                                <button class="btn btn-primary" type="button">Cancel</button>
+                                <button class="btn btn-danger" type="button">Delete</button>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </main>
+
+        <!--/////////////manage store/////////////-->
+        <main class="container-fluid" id="mng-store">
+
+            <section>
+                <section class="row p-2" style="height: 100%">
+                    <section class="col-lg-8 col-12  bg-body" style="height: 100%">
+
+                        <div class="input-group row mt-2 mb-1">
+                            <div class="col-11">
+                                <input class="form-control" type="search">
+                            </div>
+                            <button class="btn btn-primary col-1" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+
+                        <div class="table-responsive ">
+                            <table class="table table-hover">
+                                <thead class="table-info">
+                                <tr>
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Qty</th>
+                                </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                <tr>
+                                    <td>I001</td>
+                                    <td>Soap</td>
+                                    <td>150</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>I002</td>
+                                    <td>Soap</td>
+                                    <td>150</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>I003</td>
+                                    <td>Soap</td>
+                                    <td>150</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>I004</td>
+                                    <td>Soap</td>
+                                    <td>150</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>I005</td>
+                                    <td>Soap</td>
+                                    <td>150</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>I006</td>
+                                    <td>Soap</td>
+                                    <td>150</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>I007</td>
+                                    <td>Soap</td>
+                                    <td>150</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>I008</td>
+                                    <td>Soap</td>
+                                    <td>150</td>
+                                    <td>200</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!--///////////////////////////////////-->
+                    <section class="col-lg-4 col-12 vh-75 bg-body">
+                        <div class="text-center mt-2 p-1" style="background-color: #442994 ; color:white;">
+                            <i class="fa-solid fa-store" style="color: #ffffff;"></i>
+                            Manage Store
+                        </div>
+                        <div>
+                            <div class="mt-2">
+                                <button class="btn btn-primary" type="button">Edit</button>
+                                <button class="btn btn-primary" type="button">New</button>
+                            </div>
+                            <div class="row mt-2 ">
+                                <label class="col-4 mt-2">Code</label>
+                                <input class="col-7 mt-2">
+
+                                <label class="col-4 mt-2">Name</label>
+                                <input class="col-7 mt-2">
+
+                                <label class="col-4 mt-2">Price</label>
+                                <input class="col-7 mt-2">
+
+                                <label class="col-4 mt-2">Qty</label>
+                                <input class="col-7 mt-2">
+                            </div>
+                            <div class="mt-2 text-end" style="width: 100%">
+                                <button class="btn btn-success" type="button">Save</button>
+                                <button class="btn btn-primary" type="button">Cancel</button>
+                                <button class="btn btn-danger" type="button">Delete</button>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </main>
+
+        <!--/////////////manage order/////////////-->
+        <main class="container-fluid" id="place-order">
+
+            <section>
+                <section class="row p-2" style="height: 100%">
+
+                    <div class="col-lg-3 col-12 bg-body">
+                        <div class="container row text-body-tertiary ">
+                            <label class="col-6">Order ID: </label>
+                            <label class="col-6">O001</label>
+                            <label class="col-6">Date: </label>
+                            <label class="col-6">2022/02/02</label>
+                        </div>
+
+                        <div class="container text-body-secondary border border-3 p-1">
+                            <div class="text-center  p-1" style="background-color: #442994 ; color:white;">
+                                Customer Details
+                            </div>
+
+                            <label class="col-4 mt-2">ID</label>
+                            <input class="col-7 mt-2">
+
+                            <label class="col-4 mt-2">Name</label>
+                            <input class="col-7 mt-2">
+
+                            <label class="col-4 mt-2">Address</label>
+                            <input class="col-7 mt-2">
+
+                        </div>
+                    </div>
+                    <!--///////////////////////////////////-->
+                    <div class=" col-lg-9  col-12 bg-body">
+                        <div class="container text-body-secondary border border-3 p-1">
+                            <div class="text-center  p-1" style="background-color: #442994 ; color:white;">
+                                Item Details
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <label class="col-4 mt-2">Code</label>
+                                    <input class="col-7 mt-2">
+
+                                    <label class="col-4 mt-2">Name</label>
+                                    <input class="col-7 mt-2">
+
+                                    <label class="col-4 mt-2">Qty On H.</label>
+                                    <input class="col-7 mt-2">
+                                </div>
+
+                                <div class="col-md-6 col-12">
+                                    <label class="col-4 mt-2">Price</label>
+                                    <input class="col-7 mt-2">
+
+                                    <label class="col-4 mt-2">Order Qty</label>
+                                    <input class="col-7 mt-2">
+
+                                    <label class="col-4 mt-2">Total</label>
+                                    <input class="col-7 mt-2">
+                                </div>
+                            </div>
+
+
+                            <div class="text-end mt-3">
+                                <button class="btn btn-danger"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                                </button>
+                                <button class="btn btn-primary"><i class="fa-solid fa-plus" style="color: #ffffff;"></i> &nbsp;
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--///////////////////////////////////-->
+                    <div class="col-12 bg-body ">
+                        <div class="table-responsive mt-2">
+                            <table class="table table-hover">
+                                <thead class="table-info">
+                                <tr>
+                                    <th scope="col">Item Code</th>
+                                    <th scope="col">Item Name</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Qty</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                <tr>
+                                    <td>P002</td>
+                                    <td>Keerisamba 5kg</td>
+                                    <td>525.00</td>
+                                    <td>2</td>
+                                    <td>1050.00</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--///////////////////////////////////-->
+                    <div class="col-12 bg-body border border-3 ">
+                        <div class="row text-end">
+                            <div class="col-12 d-md-flex justify-content-end">
+                                <div class="row w-lg-25 ">
+                                    <label class="col-4 mt-2">Total</label>
+                                    <input class="col-7 mt-2">
+                                </div>
+                            </div>
+                            <div class="col-12  d-md-flex justify-content-end">
+                                <div class="row w-lg-25 ">
+                                    <label class="col-4 mt-2">Discount</label>
+                                    <input class="col-7 mt-2">
+                                </div>
+
+                                <div class="row w-lg-25 ">
+                                    <label class="col-4 mt-2">Cash</label>
+                                    <input class="col-7 mt-2">
+                                </div>
+
+                                <div class="row w-lg-25 ">
+                                    <label class="col-4 mt-2">Grand Total</label>
+                                    <input class="col-7 mt-2">
+                                </div>
+                            </div>
+
+                            <div>
+                                <button class="btn btn-success m-3">
+                                    <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                                    Place Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+
+            <script>
+                let login = document.getElementById('login');
+                let navBar = document.getElementById('navigation-bar');
+                let home = document.getElementById('home');
+
+                let mng_cus = document.getElementById('manage-customer');
+                let mng_store = document.getElementById('mng-store');
+                let mng_orders = document.getElementById('mng-orders');
+                let place_order = document.getElementById('place-order');
+
+                {
+                    login.style.display = 'block';
+                    navBar.style.display = 'none';
+                    home.style.display = 'none';
+
+                    mng_cus.style.display = 'none';
+                    mng_store.style.display = 'none';
+                    mng_orders.style.display = 'none';
+                    place_order.style.display = 'none';
+                }
+
+                function loginBtn() {
+                    login.style.display = 'none';
+                    home.style.display = 'block';
+                    navBar.style.display = 'block';
+                }
+
+                function logoutBtn() {
+                    login.style.display = 'block';
+                    navBar.style.display = 'none';
+                    home.style.display = 'none';
+                    mng_cus.style.display = 'none';
+                    mng_store.style.display = 'none';
+                    mng_orders.style.display = 'none';
+                    place_order.style.display = 'none';
+                }
+
+                function placeOrder() {
+                    place_order.style.display = 'block';
+                    home.style.display = 'none';
+                    mng_cus.style.display = 'none';
+                    mng_store.style.display = 'none';
+                    mng_orders.style.display = 'none';
+                }
+
+                function mngOrder() {
+                    mng_orders.style.display = 'block';
+                    home.style.display = 'none';
+                    mng_cus.style.display = 'none';
+                    mng_store.style.display = 'none';
+                    place_order.style.display = 'none';
+                }
+
+                function mngStore() {
+                    mng_store.style.display = 'block';
+                    home.style.display = 'none';
+                    mng_cus.style.display = 'none';
+                    mng_orders.style.display = 'none';
+                    place_order.style.display = 'none';
+                }
+
+                function mngCustomer() {
+                    mng_cus.style.display = 'block';
+                    home.style.display = 'none';
+                    mng_store.style.display = 'none';
+                    mng_orders.style.display = 'none';
+                    place_order.style.display = 'none';
+                }
+
+                function goHome() {
+                    home.style.display = 'block';
+                    mng_cus.style.display = 'none';
+                    mng_store.style.display = 'none';
+                    mng_orders.style.display = 'none';
+                    place_order.style.display = 'none';
+                }
+
+                /*/////////////////////////////////////////*/
+                document.getElementById("btnCustomer").addEventListener("click", function () {
+
+                    let id = document.getElementById("txtCustomerID").value;
+                    let name = document.getElementById("txtCustomerName").value;
+                    let address = document.getElementById("txtCustomerAddress").value;
+                    let salary = document.getElementById("txtCustomerSalary").value;
+
+                    console.log(id, name, address, salary);
+
+                    let tBody = document.getElementById("tblCustomer");
+
+                    let tr = document.createElement("tr");
+
+                    let col1 = document.createElement("td");
+                    let col2 = document.createElement("td");
+                    let col3 = document.createElement("td");
+                    let col4 = document.createElement("td");
+
+                    col1.textContent = id;
+                    col2.textContent = name;
+                    col3.textContent = address;
+                    col4.textContent = salary;
+
+                    tr.appendChild(col1);
+                    tr.appendChild(col2);
+                    tr.appendChild(col3);
+                    tr.appendChild(col4);
+
+                    tBody.appendChild(tr);
+                    }
+                );
+            </script>
+    </body>
+</html>
