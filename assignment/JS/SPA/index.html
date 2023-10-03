@@ -131,7 +131,7 @@
                         </div>
 
                         <div class="table-responsive " >
-                            <table class="table table-hover">
+                            <table id="cusdatatable" class="table table-hover">
                                 <thead class="table-info">
                                 <tr>
                                     <th scope="col">ID</th>
@@ -181,26 +181,6 @@
                                     <td>5000</td>
                                 </tr>
 
-                                <tr>
-                                    <td>c007</td>
-                                    <td>Chamara</td>
-                                    <td>Colombo</td>
-                                    <td>3000</td>
-                                </tr>
-
-                                <tr>
-                                    <td>c008</td>
-                                    <td>Nalin</td>
-                                    <td>Galle</td>
-                                    <td>5500</td>
-                                </tr>
-
-                                <tr>
-                                    <td>c009</td>
-                                    <td>Hasindu</td>
-                                    <td>Galle</td>
-                                    <td>7000</td>
-                                </tr>
 
                                 </tbody>
                             </table>
@@ -688,17 +668,35 @@
 
                 const customer = new Array();
 
-                var cus={
-                    name: cusnam.value,
-                    id: customerid.value,
-                    address: address.value,
-                    salary: Salary.value,
-                };
+
 
                 savebtn.addEventListener("click",function(){
+                    var cus={
+                        name: cusnam.value,
+                        id: customerid.value,
+                        address: address.value,
+                        salary: Salary.value,
+
+                    };
                     customer.push(cus);
                     console.log(customer);
+
+                    const tr = document.createElement("tr");
+                    const td1 = document.createElement("td");
+                    const td2 = document.createElement("td");
+                    const td3 = document.createElement("td");
+                    const td4 = document.createElement("td");
+
+                    td1.textContent=cusnam.value;
+                    td2.textContent=customerid.value;
+                    td3.textContent=address.value;
+                    td4.textContent=Salary.value;
+
+                    tr.append(td2,td1,td3,td4);
+                    document.querySelector("#cusdatatable").append(tr);
                 });
+
+
 
 
             </script>
