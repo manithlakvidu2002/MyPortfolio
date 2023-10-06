@@ -14,6 +14,12 @@
         <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 
+        <style>
+            .bg-body{
+                height: 45vh;
+            }
+        </style>
+
     </head>
 
     <body style="background-color: #ffffff">
@@ -141,45 +147,7 @@
                                 </tr>
                                 </thead>
                                 <tbody id="tblCustomer" class="table-group-divider">
-                                <tr>
-                                    <td>c001</td>
-                                    <td>Manith</td>
-                                    <td>Galle</td>
-                                    <td>5000</td>
-                                </tr>
-                                <tr>
-                                    <td>c002</td>
-                                    <td>Kasun</td>
-                                    <td>Waduraba</td>
-                                    <td>4500</td>
-                                </tr>
-                                <tr>
-                                    <td>c003</td>
-                                    <td>Malith</td>
-                                    <td>Wakwella</td>
-                                    <td>5000</td>
-                                </tr>
 
-                                <tr>
-                                    <td>c004</td>
-                                    <td>Sachin</td>
-                                    <td>Galle</td>
-                                    <td>6000</td>
-                                </tr>
-
-                                <tr>
-                                    <td>c005</td>
-                                    <td>Nimal</td>
-                                    <td>Galle</td>
-                                    <td>2000</td>
-                                </tr>
-
-                                <tr>
-                                    <td>c006</td>
-                                    <td>Kamal</td>
-                                    <td>Panadura</td>
-                                    <td>5000</td>
-                                </tr>
 
 
                                 </tbody>
@@ -197,7 +165,31 @@
                             <div class="mt-2">
                                 <button class="btn btn-primary" type="button">Edit</button>
                                 <button class="btn btn-primary" type="button">New</button>
-                                <button id="btnGetAll" class="btn btn-primary" type="button">Get All</button>
+                                <button id="btnGetAll" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Get All
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <table class="table table-bordered">
+                                                    <thead class="table-light">
+                                                    <tr>
+                                                        <th scope="col" class="text-white" style="background-color: #442994">ID</th>
+                                                        <th scope="col" class="text-white" style="background-color: #442994">Name</th>
+                                                        <th scope="col" class="text-white" style="background-color: #442994">Address</th>
+                                                        <th scope="col" class="text-white" style="background-color: #442994">Salary</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody id="modalTable">
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
                             <div class="row mt-2 ">
@@ -215,7 +207,7 @@
                             </div>
                             <div class="mt-2 text-end" style="width: 100%">
                                 <button id="customersavebtn" class="btn btn-success" type="button">Save</button>
-                                <button id="cuscancel" class="btn btn-primary" type="button">Cancel</button>
+                                <button id="btnClear" class="btn btn-primary" type="button">Cancel</button>
                                 <button id="cusdelete" class="btn btn-danger" type="button">Delete</button>
                             </div>
                         </div>
@@ -250,7 +242,7 @@
                                     <th scope="col">Price</th>
                                 </tr>
                                 </thead>
-                                <tbody class="table-group-divider">
+                                <tbody  class="table-group-divider">
                                 <tr>
                                     <td>O001</td>
                                     <td>2022/02/25</td>
@@ -664,7 +656,12 @@
 
                 /*/////////////////////////////////////////*/
 
-
+                $("#btnClear").click(function (){
+                    $("#id").val("");
+                    $("#name").val("");
+                    $("#address").val("");
+                    $("#salary").val("");
+                });
 
                 var customers = [
 
@@ -690,14 +687,15 @@
                     console.log(customers);
                 });
 
+
                 $("#btnGetAll").click(function () {
                     getAllCustomers();
                 });
 
-
-                function getAllCustomers(){
+                function getAllCustomers() {
                     //remove all the child elements of tbody before adding the table rows
                     $("#tblCustomer").empty();
+                    $("#modalTable").empty();
 
                     for (let i = 0; i < customers.length; i++) {
                         let row = `<tr>
@@ -707,13 +705,32 @@
                             <td>${customers[i].salary}</td>
                         </tr>`;
                         $("#tblCustomer").append(row);
+                        $("#modalTable").append(row);
                     }
+
+                    bindEvents();
+
                 }
 
+                bindEvents();
 
+                function bindEvents(){
+                    $('#tblCustomer>tr').click(function () {
+                        let id = $(this).children(':nth-child(1)').text();
+                        let name = $(this).children(':nth-child(2)').text();
+                        let address = $(this).children(':nth-child(3)').text();
+                        let salary = $(this).children(':nth-child(4)').text();
 
+                        setTextFieldValues(id,name,address,salary);
+                    });
+                }
 
-
+                function setTextFieldValues(id, name, address, salary) {
+                    $("#id").val(id);
+                    $("#name").val(name);
+                    $("#address").val(address);
+                    $("#salary").val(salary);
+                }
             </script>
     </body>
 </html>
