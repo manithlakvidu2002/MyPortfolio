@@ -1,0 +1,81 @@
+#body{
+    background-color: #b6d4fe;
+}
+#result {
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #444444;
+    font-size: 27px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    column-gap: 5px;
+}
+.btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: rgba(203, 158, 158, 0.79);
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 30px;
+    bottom: 0;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+    flex: auto;
+    cursor: pointer;
+    color: white;
+
+}
+.btn:hover {
+    background-color: #911818;
+}
+#r-c {
+    background-color: #442994;
+}
+#r-c:hover{
+    background-color: #911818;
+}
+.r-11 {
+    background-color: #442994;
+}
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 400px;
+    height: 530px;
+    opacity: 1;
+    background: url("assets/new back (2).jpg");
+    padding: 10px;
+    border-radius: 20px;
+}
+@keyframes casing {
+    0% {
+        bottom: 0px;
+    }
+
+    100% {
+        bottom: -1200px;
+
+    }
+}
+
