@@ -17,21 +17,21 @@ h2{
     letter-spacing: 4px;
     font-weight: bolder;
 }
-#speed{
+#sp{
     position: absolute;
     top: 70px;
     font-size: 20px;
     left: 39%;
     color: #ffffff;
 }
-#speed_meter{
+#speed{
     position: absolute;
     top: 70px;
     font-size: 20px;
     left: 45%;
     color: #ffffff;
 }
-#waiting{
+#wt{
     position: absolute;
     top: 70px;
     font-size: 20px;
@@ -62,22 +62,22 @@ h2{
 }
 #start{
     position: absolute;
-    top: 55%;
-    left: 30%;
+    top: 60%;
+    left: 42%;
     width: 100px;
 }
 #stop{
     position: absolute;
-    top: 55%;
-    left: 40%;
+    top: 60%;
+    left: 51%;
     width: 100px;
 }
 #customRange{
     position: absolute;
   
 }
-  #meter{
+#meter{
     position:absolute;
-    top: 56%;
-    left: 50%;
-  }
+    top: 54%;
+    left: 45%;
+}

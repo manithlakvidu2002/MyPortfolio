@@ -9,6 +9,8 @@ let reverse = true;
 let interval;
 let stop;
 let isMusicPlaying = false;
+let txtSpeed=document.querySelector("#speed");
+let txtTime=document.querySelector("#time");
 
 btnStart.addEventListener("click",function (){
     task();
@@ -21,12 +23,16 @@ btnStop.addEventListener("click",function (){
 });
 meterInput.addEventListener("input",function (){
     task();
+    value = 100 - parseInt(meterInput.value);
+    txtSpeed.innerText=((100-(value*0.5)/1.5)).toFixed(0)+"%";
+    txtTime.innerText=(100 - parseInt(meterInput.value))*10;
 });
 function task(){
     clearInterval(stop);
 
     let limit = 50;
     let meterValue = meterInput.value;
+
     if (meterValue >= 0 && meterValue <= 100) {
         limit = 100 - meterValue;
     }
