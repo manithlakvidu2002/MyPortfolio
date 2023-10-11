@@ -2,9 +2,30 @@
     font-family: 'Poppins', sans-serif;
 }
 
+label{
+    font-weight:  bold;
+}
+
 body > section {
     width: 100%;
     height: 100vh;
-
     position: relative;
+}
+
+#navbarText a {
+    color: white;
+}
+
+#navbarText a:hover {
+    cursor: pointer;
+    color: #442994;
+}
+
+body > section:nth-child(1) > section {
+    width: 95vw;
+    height: 85vh;
+}
+
+main section > button > i {
+    font-size: 150%;
 }
